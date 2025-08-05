@@ -1,0 +1,24 @@
+site_name: Axiom Paths
+nav:
+  - Home: index.md
+  - Analisi 1:
+      - Teoria:
+          - Limiti: analisi-1/teoria/limiti.md
+      - Esercizi:
+          - Limiti: analisi-1/esercizi/limiti-esercizi.md
+  - Algebra Lineare:
+      - Teoria:
+          - Spazi Vettoriali: algebra-lineare/teoria/spazi-vettoriali.md
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

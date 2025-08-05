@@ -1,0 +1,1368 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Wiki open-source di matematica, esercizi e appunti">
+      
+      
+      
+      
+        <link rel="prev" href="../../teoria/spazi-vettoriali/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Foglio 1 - Axiom Paths</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#geometria-i-foglio-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Axiom Paths" class="md-header__button md-logo" aria-label="Axiom Paths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Axiom Paths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Foglio 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TUO-USERNAME/Axiom-Paths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Axiom Paths" class="md-nav__button md-logo" aria-label="Axiom Paths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Axiom Paths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TUO-USERNAME/Axiom-Paths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Analisi 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analisi 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Teoria
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Teoria
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../analisi-1/teoria/limiti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Limiti
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../analisi-1/teoria/derivate.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Derivate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../analisi-1/teoria/integrali.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integrali
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Esercizi
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Esercizi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../analisi-1/esercizi/limiti-esercizi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Limiti
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../analisi-1/esercizi/derivate-esercizi.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Derivate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Geometria 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Geometria 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Teoria
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Teoria
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teoria/spazi-vettoriali/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spazi Vettoriali
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Esercizi
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Esercizi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../esercizi/spazi-vettoriali-esercizi.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spazi Vettoriali
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fogli di Esercizi
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fogli di Esercizi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Foglio 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Foglio 1
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 5*
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 7
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 8
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 9
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 10*
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="geometria-i-foglio-1">Geometria I – Foglio 1<a class="headerlink" href="#geometria-i-foglio-1" title="Permanent link">&para;</a></h1>
+<h2 id="esercizio-1">Esercizio 1<a class="headerlink" href="#esercizio-1" title="Permanent link">&para;</a></h2>
+<p>Dimostrare che in uno spazio vettoriale <span class="arithmatex">\(V\)</span>, abbiamo che <span class="arithmatex">\(0\cdot v = O\)</span> per ogni <span class="arithmatex">\(v \in V\)</span> (qui <span class="arithmatex">\(O \in V\)</span> e <span class="arithmatex">\(0 \in \mathbb{R}\)</span>) usando solo le altre proprietà della definizione di spazio vettoriale.</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(0=0\)</span>.<br />
+<em>Giustificazione.</em> Identità riflessiva nello scalare.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(0+0=0\)</span>.<br />
+<em>Giustificazione.</em> Proprietà dell’elemento neutro additivo in <span class="arithmatex">\((\mathbb{R},+)\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((0+0)\cdot v=0\cdot v\)</span>.<br />
+<em>Giustificazione.</em> Moltiplicazione per scalare è un’operazione definita per ogni scalare e vettore.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(0\cdot v + 0\cdot v = 0\cdot v\)</span>.<br />
+<em>Giustificazione.</em> Distributività della moltiplicazione per scalare rispetto alla somma degli scalari.</p>
+</li>
+<li>
+<p>Poiché <span class="arithmatex">\(0\cdot v\in V\)</span>, esiste l’opposto <span class="arithmatex">\(-\big(0\cdot v\big)\)</span>. Sommo <span class="arithmatex">\(-\big(0\cdot v\big)\)</span> ad ambo i membri:<br />
+<span class="arithmatex">\((0\cdot v + 0\cdot v) + \big(-0\cdot v\big) = 0\cdot v + \big(-0\cdot v\big)\)</span>.<br />
+<em>Giustificazione.</em> Esistenza dell’opposto (inverso additivo) in <span class="arithmatex">\(V\)</span> e proprietà di cancellazione della somma.</p>
+</li>
+<li>
+<p>Per associatività e definizione di opposto:<br />
+<span class="arithmatex">\(0\cdot v + \big(0\cdot v + (-0\cdot v)\big) = O\)</span> e dunque <span class="arithmatex">\(0\cdot v = O\)</span>.<br />
+<em>Giustificazione.</em> <span class="arithmatex">\((x+(-x))=O\)</span>.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Errori comuni</p>
+<ul>
+<li><strong>Circolarità:</strong> non assumere <span class="arithmatex">\(0\cdot v=O\)</span> a metà dimostrazione.</li>
+<li><strong>Notazione:</strong> distinguere <strong><span class="arithmatex">\(0\)</span></strong> (scalare) da <strong><span class="arithmatex">\(O\)</span></strong> (vettore nullo).</li>
+</ul>
+</div>
+<hr />
+<h2 id="esercizio-2">Esercizio 2<a class="headerlink" href="#esercizio-2" title="Permanent link">&para;</a></h2>
+<p>In uno spazio vettoriale provare che per ogni <span class="arithmatex">\(t \in \mathbb{R}\)</span> abbiamo che <span class="arithmatex">\(t \cdot O = O\)</span>.</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(O=O\)</span>.<br />
+<em>Giustificazione.</em> Identità riflessiva in <span class="arithmatex">\(V\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(O+O=O\)</span>.<br />
+<em>Giustificazione.</em> <span class="arithmatex">\(O\)</span> è neutro additivo in <span class="arithmatex">\(V\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(t\cdot (O+O)=t\cdot O\)</span>.<br />
+<em>Giustificazione.</em> Moltiplicazione per scalare ben definita.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(t\cdot O + t\cdot O = t\cdot O\)</span>.<br />
+<em>Giustificazione.</em> Distributività della moltiplicazione per scalare rispetto alla somma di vettori.</p>
+</li>
+<li>
+<p>Sommo <span class="arithmatex">\(-\big(t\cdot O\big)\)</span> ad ambo i membri:<br />
+<span class="arithmatex">\((t\cdot O + t\cdot O) + (-t\cdot O) = t\cdot O + (-t\cdot O)\)</span>.<br />
+<em>Giustificazione.</em> Esistenza dell’opposto e associatività.</p>
+</li>
+<li>
+<p>Ottengo <span class="arithmatex">\(t\cdot O = O\)</span>.<br />
+<em>Giustificazione.</em> <span class="arithmatex">\(x+(-x)=O\)</span>.</p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-3">Esercizio 3<a class="headerlink" href="#esercizio-3" title="Permanent link">&para;</a></h2>
+<p>Dedurre dall'esercizio 2 che se <span class="arithmatex">\(t \cdot v = O\)</span>, allora <span class="arithmatex">\(t = 0\)</span> oppure <span class="arithmatex">\(v = O\)</span>.</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p>Se <span class="arithmatex">\(t=0\)</span>, allora per l’Esercizio 1 <span class="arithmatex">\(0\cdot v=O\)</span>. Tesi verificata.<br />
+<em>Giustificazione.</em> Caso banale.</p>
+</li>
+<li>
+<p>Supponi <span class="arithmatex">\(t\neq 0\)</span>. Allora esiste l’inverso <span class="arithmatex">\(t^{-1}\in\mathbb{R}\)</span> con <span class="arithmatex">\(t^{-1}t=1\)</span>.<br />
+<em>Giustificazione.</em> <span class="arithmatex">\((\mathbb{R}\setminus\{0\},\cdot)\)</span> è un gruppo.</p>
+</li>
+<li>
+<p>Moltiplica l’uguaglianza <span class="arithmatex">\(t\cdot v=O\)</span> per <span class="arithmatex">\(t^{-1}\)</span>:<br />
+<span class="arithmatex">\(t^{-1}\cdot (t\cdot v) = t^{-1}\cdot O\)</span>.<br />
+<em>Giustificazione.</em> Operazione per scalare su ambo i membri.</p>
+</li>
+<li>
+<p>Per associatività della moltiplicazione scalare e definizione di <span class="arithmatex">\(1\cdot v\)</span>:<br />
+<span class="arithmatex">\((t^{-1}t)\cdot v = 1\cdot v = v\)</span>. Quindi <span class="arithmatex">\(v = t^{-1}\cdot O\)</span>.<br />
+<em>Giustificazione.</em> Proprietà di unità.</p>
+</li>
+<li>
+<p>Per l’Esercizio 2, <span class="arithmatex">\(t^{-1}\cdot O=O\)</span>. Dunque <span class="arithmatex">\(v=O\)</span>.<br />
+<em>Giustificazione.</em> Proposizione precedente.</p>
+</li>
+<li>
+<p>Concludiamo: se <span class="arithmatex">\(t\neq 0\)</span> allora <span class="arithmatex">\(v=O\)</span>; quindi in generale <span class="arithmatex">\(t=0\)</span> <strong>oppure</strong> <span class="arithmatex">\(v=O\)</span>.  </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-4">Esercizio 4<a class="headerlink" href="#esercizio-4" title="Permanent link">&para;</a></h2>
+<p>Sia <span class="arithmatex">\(\mathcal{P}\)</span> lo spazio dei polinomi reali e
+[
+W={p\in\mathcal{P}: p(1)=p(2)=0}.
+]
+<strong>Tesi.</strong> <span class="arithmatex">\(W\)</span> è un sottospazio vettoriale di <span class="arithmatex">\(\mathcal{P}\)</span>.</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p><strong>Zero in <span class="arithmatex">\(W\)</span>.</strong> Il polinomio nullo <span class="arithmatex">\(p_0(x)\equiv 0\)</span> soddisfa <span class="arithmatex">\(p_0(1)=0\)</span> e <span class="arithmatex">\(p_0(2)=0\)</span>.<br />
+<em>Giustificazione.</em> Valutazione diretta.</p>
+</li>
+<li>
+<p><strong>Chiusura per somma.</strong> Se <span class="arithmatex">\(p_1,p_2\in W\)</span>, allora<br />
+<span class="arithmatex">\((p_1+p_2)(1)=p_1(1)+p_2(1)=0+0=0\)</span> e<br />
+<span class="arithmatex">\((p_1+p_2)(2)=p_1(2)+p_2(2)=0+0=0\)</span>.<br />
+<em>Giustificazione.</em> Linearità della valutazione.</p>
+</li>
+<li>
+<p><strong>Chiusura per scalare.</strong> Se <span class="arithmatex">\(p\in W\)</span> e <span class="arithmatex">\(\lambda\in\mathbb{R}\)</span>, allora<br />
+<span class="arithmatex">\((\lambda p)(1)=\lambda p(1)=\lambda\cdot 0=0\)</span> e analogamente per <span class="arithmatex">\(x=2\)</span>.<br />
+<em>Giustificazione.</em> Linearità della valutazione.</p>
+</li>
+<li>
+<p>Sono verificate le tre condizioni: <span class="arithmatex">\(W\)</span> è un s.s.v.  </p>
+</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Schema rapido per i s.s.v.</p>
+<p>1) <span class="arithmatex">\(O\in W\)</span> — 2) chiusura per somma — 3) chiusura per scalare.</p>
+</div>
+<hr />
+<h2 id="esercizio-5">Esercizio 5*<a class="headerlink" href="#esercizio-5" title="Permanent link">&para;</a></h2>
+<p>Per quali <span class="arithmatex">\(p\in\mathcal{P}\)</span> il grafico <span class="arithmatex">\(\Gamma=\{(x,p(x)) : x\in\mathbb{R}\}\subset\mathbb{R}^2\)</span> è un sottospazio?</p>
+<p><strong>Tesi.</strong> Esattamente per <span class="arithmatex">\(p(x)=ax\)</span> (<span class="arithmatex">\(a\in\mathbb{R}\)</span>) o <span class="arithmatex">\(p\equiv 0\)</span>.</p>
+<p><strong>Dimostrazione (passi chiave)</strong></p>
+<ol>
+<li>
+<p><strong>Origine.</strong> Se <span class="arithmatex">\(\Gamma\)</span> è s.s.v., allora <span class="arithmatex">\((0,0)\in\Gamma\)</span>, quindi <span class="arithmatex">\(p(0)=0\)</span>.<br />
+<em>Giustificazione.</em> Un s.s.v. contiene il vettore nullo.</p>
+</li>
+<li>
+<p><strong>Somma.</strong> Se <span class="arithmatex">\((x_1,p(x_1))\)</span> e <span class="arithmatex">\((x_2,p(x_2))\)</span> sono in <span class="arithmatex">\(\Gamma\)</span>, la loro somma<br />
+<span class="arithmatex">\((x_1+x_2,\; p(x_1)+p(x_2))\)</span> deve stare in <span class="arithmatex">\(\Gamma\)</span>.<br />
+   Quindi <strong>per ogni</strong> <span class="arithmatex">\(x_1,x_2\)</span>:<br />
+   [
+   p(x_1+x_2)=p(x_1)+p(x_2).
+   ]<br />
+<em>Giustificazione.</em> Chiusura per somma: equazione di Cauchy additiva.</p>
+</li>
+<li>
+<p><strong>Scalari.</strong> Per ogni <span class="arithmatex">\(\lambda\in\mathbb{R}\)</span>, <span class="arithmatex">\(\lambda(x,p(x))=(\lambda x,\lambda p(x))\in\Gamma\)</span> implica<br />
+   [
+   p(\lambda x)=\lambda\,p(x)\quad\text{per ogni }x,\lambda.
+   ]<br />
+<em>Giustificazione.</em> Chiusura per prodotto per scalare: omogeneità di grado 1.</p>
+</li>
+<li>
+<p><strong>Conclusione.</strong> Un polinomio che è additivo e omogeneo di grado 1 è necessariamente lineare <strong>senza termine noto</strong>: <span class="arithmatex">\(p(x)=ax\)</span>.<br />
+   Polinomi di grado <span class="arithmatex">\(\ge 2\)</span> violano l’additività (es. <span class="arithmatex">\(x^2\)</span>: <span class="arithmatex">\(1^2+3^2\neq (1+3)^2\)</span>).  </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-6">Esercizio 6<a class="headerlink" href="#esercizio-6" title="Permanent link">&para;</a></h2>
+<p>In <span class="arithmatex">\(M_{2,2}(\mathbb{R})\)</span> si consideri
+[
+W={A\in M_{2,2}(\mathbb{R}) : A=-A^{T}}.
+]
+<strong>Tesi.</strong> <span class="arithmatex">\(W\)</span> è un sottospazio di <span class="arithmatex">\(M_{2,2}(\mathbb{R})\)</span>.</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p><strong>Forma generale.</strong> Se <span class="arithmatex">\(A=-A^T\)</span> con <span class="arithmatex">\(A=\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}\)</span>, allora dai coefficienti diagonali <span class="arithmatex">\(a=-a\)</span> e <span class="arithmatex">\(d=-d\)</span> segue <span class="arithmatex">\(a=d=0\)</span>. Inoltre <span class="arithmatex">\(c=-b\)</span>.<br />
+   Quindi ogni <span class="arithmatex">\(A\in W\)</span> è del tipo
+   [
+   A=\begin{pmatrix}0&amp;b\ -b&amp;0\end{pmatrix},\quad b\in\mathbb{R}.
+   ]
+   <em>Giustificazione.</em> Definizione di trasposta e uguaglianza di matrici.</p>
+</li>
+<li>
+<p><strong>Chiusura per somma.</strong> Siano <span class="arithmatex">\(A_1,A_2\in W\)</span>. Allora <span class="arithmatex">\(A_1=-A_1^T\)</span> e <span class="arithmatex">\(A_2=-A_2^T\)</span>.<br />
+   [
+   (A_1+A_2)^T=A_1^T+A_2^T=-(A_1+A_2).
+   ]
+   Quindi <span class="arithmatex">\(A_1+A_2\in W\)</span>.<br />
+<em>Giustificazione.</em> Linearità della trasposizione.</p>
+</li>
+<li>
+<p><strong>Chiusura per scalare.</strong> Per <span class="arithmatex">\(\lambda\in\mathbb{R}\)</span> e <span class="arithmatex">\(A\in W\)</span>:
+   [
+   (\lambda A)^T=\lambda A^T=\lambda(-A)=-(\lambda A),
+   ]
+   dunque <span class="arithmatex">\(\lambda A\in W\)</span>.<br />
+<em>Giustificazione.</em> Linearità della trasposizione e proprietà del prodotto per scalare.</p>
+</li>
+<li>
+<p><strong>Zero in <span class="arithmatex">\(W\)</span>.</strong> La matrice nulla <span class="arithmatex">\(0\)</span> verifica <span class="arithmatex">\(0=-0^T\)</span>.<br />
+<em>Giustificazione.</em> Trasposta di zero è zero.</p>
+</li>
+<li>
+<p>Verificate le tre condizioni, <span class="arithmatex">\(W\)</span> è un s.s.v. di <span class="arithmatex">\(M_{2,2}(\mathbb{R})\)</span>. </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-7">Esercizio 7<a class="headerlink" href="#esercizio-7" title="Permanent link">&para;</a></h2>
+<p>In <span class="arithmatex">\(\mathbb{R}^3\)</span>:
+[
+W={(x,y,z)\in\mathbb{R}^3: x+y+z=0},\qquad U_k=L\big((1,k,2)\big).
+]
+Determinare <span class="arithmatex">\(k\in\mathbb{R}\)</span> per cui <span class="arithmatex">\(W\cup U_k\)</span> è un s.s.v.</p>
+<p><strong>Soluzione</strong></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\dim W=2\)</span> (vincolo lineare <span class="arithmatex">\(x=-y-z\)</span>: due variabili libere <span class="arithmatex">\(y,z\)</span>).<br />
+<em>Giustificazione.</em> Parametrizzazione: <span class="arithmatex">\((x,y,z)=y(-1,1,0)+z(-1,0,1)\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\dim U_k=1\)</span> per ogni <span class="arithmatex">\(k\)</span> (è lo span di un vettore non nullo).<br />
+<em>Giustificazione.</em> Un solo generatore non nullo <span class="arithmatex">\(\Rightarrow\)</span> base.</p>
+</li>
+<li>
+<p><strong>Fatto chiave.</strong> <span class="arithmatex">\(W\cup U_k\)</span> è s.s.v. <span class="arithmatex">\(\Rightarrow\)</span> uno è contenuto nell’altro.<br />
+   Poiché <span class="arithmatex">\(\dim U_k=1&lt;2=\dim W\)</span>, l’unico caso possibile è <span class="arithmatex">\(U_k\subseteq W\)</span>.<br />
+<em>Giustificazione.</em> Se fosse <span class="arithmatex">\(W\subseteq U_k\)</span>, avremmo <span class="arithmatex">\(2\le 1\)</span>, assurdo.</p>
+</li>
+<li>
+<p>Condizione di inclusione: il generatore <span class="arithmatex">\((1,k,2)\)</span> deve soddisfare l’equazione di <span class="arithmatex">\(W\)</span>:
+   [
+   1+k+2=0\ \Longrightarrow\ k=-3.
+   ]</p>
+</li>
+<li>
+<p>Con <span class="arithmatex">\(k=-3\)</span>, <span class="arithmatex">\(U_k\subseteq W\)</span> e dunque <span class="arithmatex">\(W\cup U_k=W\)</span>, che è un s.s.v.<br />
+   Con <span class="arithmatex">\(k\neq -3\)</span>, l’unione non è chiusa per somma. </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-8">Esercizio 8<a class="headerlink" href="#esercizio-8" title="Permanent link">&para;</a></h2>
+<p>Per <span class="arithmatex">\(v_1,v_2\in V\)</span>, provare che
+[
+L(v_1,v_2)=L(v_1)+L(v_2).
+]</p>
+<p><strong>Dimostrazione (per doppia inclusione)</strong></p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\subseteq\)</span></strong> Sia <span class="arithmatex">\(x\in L(v_1,v_2)\)</span>. Allora <span class="arithmatex">\(x=\alpha v_1+\beta v_2\)</span> per qualche <span class="arithmatex">\(\alpha,\beta\in\mathbb{R}\)</span>.<br />
+   Scrivo <span class="arithmatex">\(x=(\alpha v_1)+(\beta v_2)\)</span> con <span class="arithmatex">\(\alpha v_1\in L(v_1)\)</span> e <span class="arithmatex">\(\beta v_2\in L(v_2)\)</span>.<br />
+   Quindi <span class="arithmatex">\(x\in L(v_1)+L(v_2)\)</span>.<br />
+<em>Giustificazione.</em> Definizione di somma di sottoinsiemi: <span class="arithmatex">\(A+B=\{a+b: a\in A,\ b\in B\}\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\supseteq\)</span></strong> Sia <span class="arithmatex">\(y\in L(v_1)+L(v_2)\)</span>. Allora <span class="arithmatex">\(y=a+b\)</span> con <span class="arithmatex">\(a\in L(v_1)\)</span>, <span class="arithmatex">\(b\in L(v_2)\)</span>.<br />
+   Esistono <span class="arithmatex">\(\alpha,\beta\)</span> con <span class="arithmatex">\(a=\alpha v_1\)</span>, <span class="arithmatex">\(b=\beta v_2\)</span>, dunque <span class="arithmatex">\(y=\alpha v_1+\beta v_2\in L(v_1,v_2)\)</span>.<br />
+<em>Giustificazione.</em> Definizione di span.</p>
+</li>
+<li>
+<p>Le due inclusioni danno l’uguaglianza: <span class="arithmatex">\(L(v_1,v_2)=L(v_1)+L(v_2)\)</span>. </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-9">Esercizio 9<a class="headerlink" href="#esercizio-9" title="Permanent link">&para;</a></h2>
+<p>Sia <span class="arithmatex">\(V\)</span> uno spazio vettoriale. Se <span class="arithmatex">\(v_1,v_2\in L(w_1,\dots,w_n)\)</span>, provare che
+[
+L(v_1,v_2)\subseteq L(w_1,\dots,w_n).
+]</p>
+<p><strong>Dimostrazione</strong></p>
+<ol>
+<li>
+<p>Poiché <span class="arithmatex">\(v_1,v_2\in L(w_1,\dots,w_n)\)</span>, esistono coefficienti <span class="arithmatex">\((\alpha_i),(\beta_i)\)</span> tali che
+   [
+   v_1=\sum_{i=1}^n \alpha_i w_i,\qquad v_2=\sum_{i=1}^n \beta_i w_i.
+   ]</p>
+</li>
+<li>
+<p>Sia <span class="arithmatex">\(x\in L(v_1,v_2)\)</span>. Allora <span class="arithmatex">\(x=a v_1+b v_2\)</span> per qualche <span class="arithmatex">\(a,b\in\mathbb{R}\)</span>. Sostituendo:
+   [
+   x=a\sum_{i=1}^n \alpha_i w_i+b\sum_{i=1}^n \beta_i w_i
+    =\sum_{i=1}^n (a\alpha_i+b\beta_i)\,w_i \in L(w_1,\dots,w_n).
+   ]
+   <em>Giustificazione.</em> Chiusura di <span class="arithmatex">\(L(w_1,\dots,w_n)\)</span> per combinazioni lineari.</p>
+</li>
+<li>
+<p>Quindi <span class="arithmatex">\(L(v_1,v_2)\subseteq L(w_1,\dots,w_n)\)</span>. </p>
+</li>
+</ol>
+<hr />
+<h2 id="esercizio-10">Esercizio 10*<a class="headerlink" href="#esercizio-10" title="Permanent link">&para;</a></h2>
+<p>Siano <span class="arithmatex">\(W_1,W_2\subseteq V\)</span> s.s.v. Se <span class="arithmatex">\(W_1\cup W_2\)</span> è un s.s.v., mostrare che
+[
+W_1\subseteq W_2\quad\text{oppure}\quad W_2\subseteq W_1.
+]</p>
+<p><strong>Dimostrazione (per assurdo)</strong></p>
+<ol>
+<li>
+<p>Supponiamo <strong>non</strong> valga nessuna inclusione: <span class="arithmatex">\(W_1\nsubseteq W_2\)</span> e <span class="arithmatex">\(W_2\nsubseteq W_1\)</span>.<br />
+<em>Giustificazione.</em> Negazione della tesi.</p>
+</li>
+<li>
+<p>Esistono allora
+   [
+   w\in W_1\setminus W_2,\qquad u\in W_2\setminus W_1.
+   ]</p>
+</li>
+<li>
+<p>Poiché <span class="arithmatex">\(W_1\cup W_2\)</span> è s.s.v., è <strong>chiuso per somma</strong>, dunque <span class="arithmatex">\(w+u\in W_1\cup W_2\)</span>.<br />
+<em>Giustificazione.</em> Proprietà dei sottospazi.</p>
+</li>
+<li>
+<p><strong>Caso A:</strong> <span class="arithmatex">\(w+u\in W_1\)</span>. Allora <span class="arithmatex">\(u=(w+u)-w\in W_1\)</span> (chiusura di <span class="arithmatex">\(W_1\)</span> per opposto e somma), ma questo contraddice <span class="arithmatex">\(u\notin W_1\)</span>.</p>
+</li>
+<li>
+<p><strong>Caso B:</strong> <span class="arithmatex">\(w+u\in W_2\)</span>. Allora <span class="arithmatex">\(w=(w+u)-u\in W_2\)</span>, contraddicendo <span class="arithmatex">\(w\notin W_2\)</span>.</p>
+</li>
+<li>
+<p>Entrambi i casi sono impossibili: l’assunzione iniziale è falsa.<br />
+   Dunque necessariamente <span class="arithmatex">\(W_1\subseteq W_2\)</span> <strong>oppure</strong> <span class="arithmatex">\(W_2\subseteq W_1\)</span>. </p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.indexes", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

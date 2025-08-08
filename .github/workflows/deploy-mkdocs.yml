@@ -5,6 +5,9 @@ on:
     branches:
       - main  # o il branch dove fai i merge
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -30,7 +33,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://github-actions:${{ secrets.GH_TOKEN }}@github.com/giovyx90/axiompaths.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/giovyx90/axiompaths.git
 
       # Step 5: Pubblica su GitHub Pages
       - name: Deploy to GitHub Pages

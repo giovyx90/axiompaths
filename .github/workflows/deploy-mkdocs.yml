@@ -1,0 +1,15 @@
+name: Deploy MkDocs
+on:
+  push:
+    branches: [main]  # o il branch dove fai i merge
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install -r requirements.txt  # se hai un requirements.txt
+      - run: mkdocs gh-deploy --force        # pubblica su gh-pages

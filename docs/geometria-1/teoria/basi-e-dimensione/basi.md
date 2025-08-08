@@ -13,6 +13,20 @@ x_1v_1+\dots+x_nv_n = y_1v_1+\dots+y_nv_n,
 
 allora $x_i=y_i$ per ogni $i$.
 
+### Dimostrazione
+
+Sottraendo le due espressioni otteniamo
+
+\[
+(x_1-y_1)v_1+\dots+(x_n-y_n)v_n = 0.
+\]
+
+L'indipendenza dei $v_i$ implica che tutti i coefficienti siano nulli,
+quindi $x_i = y_i$ per ogni $i$.
+
+!!! tip "Axio"
+    Ogni base rende i conti unici: controlla sempre l'indipendenza dei vettori!
+
 ### Coordinate
 
 Dato $v\in V$, esistono unici scalari $x_1,\dots,x_n$ tali che

@@ -25,6 +25,13 @@ jobs:
           pip install mkdocs  # Installa mkdocs
           pip install mkdocs-material  # Installa il tema Material
         
-      # Step 4: Pubblica su GitHub Pages
+      # Step 4: Configura l'autenticazione con GitHub
+      - name: Set up Git authentication
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://github-actions:${{ secrets.GH_TOKEN }}@github.com/giovyx90/axiompaths.git
+
+      # Step 5: Pubblica su GitHub Pages
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force  # Pubblica su gh-pages

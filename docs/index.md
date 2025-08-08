@@ -17,10 +17,10 @@ Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno 
 ### Analisi 1
 
 - **Teoria**
-  - [Limiti](analisi-1/teoria/limiti.md)
+  - In arrivo presto...
 
 - **Esercizi**
-  - [Limiti](analisi-1/esercizi/limiti-esercizi.md)
+  - In arrivo presto...
 
 - **Esami**
   - In arrivo presto...

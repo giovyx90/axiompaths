@@ -1,29 +1,34 @@
 # Geometria I – Foglio 1
 
+## Prerequisiti
+
+- Definizione di spazio vettoriale e sue proprietà.
+- Operazioni tra vettori: somma, opposto e prodotto per scalare.
+- Sottospazi vettoriali.
+- Combinazioni lineari, span e dipendenza lineare.
+- Conoscenza di polinomi reali e matrici \(2\times 2\).
+
+!!! tip "Axio"
+    Ripassa le definizioni con esempi concreti: ti renderà più sicuro negli esercizi!
+
 ## Esercizio 1
 Dimostrare che in uno spazio vettoriale \(V\), abbiamo che \(0\cdot v = O\) per ogni \(v \in V\) (qui \(O \in V\) e \(0 \in \mathbb{R}\)) usando solo le altre proprietà della definizione di spazio vettoriale.
 
 **Dimostrazione**
 
-1. \(0=0\).  
-   *Giustificazione.* Identità riflessiva nello scalare.
+1. \(0=0\).   (Identità riflessiva nello scalare.)
 
-2. \(0+0=0\).  
-   *Giustificazione.* Proprietà dell’elemento neutro additivo in \((\mathbb{R},+)\).
+2. \(0+0=0\).   (Proprietà dell’elemento neutro additivo in \((\mathbb{R},+)\).)
 
-3. \((0+0)\cdot v=0\cdot v\).  
-   *Giustificazione.* Moltiplicazione per scalare è un’operazione definita per ogni scalare e vettore.
+3. \((0+0)\cdot v=0\cdot v\).   (Moltiplicazione per scalare è un’operazione definita per ogni scalare e vettore.)
 
-4. \(0\cdot v + 0\cdot v = 0\cdot v\).  
-   *Giustificazione.* Distributività della moltiplicazione per scalare rispetto alla somma degli scalari.
+4. \(0\cdot v + 0\cdot v = 0\cdot v\).   (Distributività della moltiplicazione per scalare rispetto alla somma degli scalari.)
 
-5. Poiché \(0\cdot v\in V\), esiste l’opposto \(-\big(0\cdot v\big)\). Sommo \(-\big(0\cdot v\big)\) ad ambo i membri:  
-   \((0\cdot v + 0\cdot v) + \big(-0\cdot v\big) = 0\cdot v + \big(-0\cdot v\big)\).  
-   *Giustificazione.* Esistenza dell’opposto (inverso additivo) in \(V\) e proprietà di cancellazione della somma.
+5. Poiché \(0\cdot v\in V\), esiste l’opposto \(-\big(0\cdot v\big)\). Sommo \(-\big(0\cdot v\big)\) ad ambo i membri:
+   \((0\cdot v + 0\cdot v) + \big(-0\cdot v\big) = 0\cdot v + \big(-0\cdot v\big)\).   (Esistenza dell’opposto e cancellazione.)
 
-6. Per associatività e definizione di opposto:  
-   \(0\cdot v + \big(0\cdot v + (-0\cdot v)\big) = O\) e dunque \(0\cdot v = O\).  
-   *Giustificazione.* \((x+(-x))=O\).
+6. Per associatività e definizione di opposto:
+   \(0\cdot v + \big(0\cdot v + (-0\cdot v)\big) = O\) e dunque \(0\cdot v = O\).   (\(x+(-x)=O\).)
 
 
 
@@ -38,24 +43,18 @@ In uno spazio vettoriale provare che per ogni \(t \in \mathbb{R}\) abbiamo che \
 
 **Dimostrazione**
 
-1. \(O=O\).  
-   *Giustificazione.* Identità riflessiva in \(V\).
+1. \(O=O\).   (Identità riflessiva in \(V\).)
 
-2. \(O+O=O\).  
-   *Giustificazione.* \(O\) è neutro additivo in \(V\).
+2. \(O+O=O\).   (\(O\) è neutro additivo in \(V\).)
 
-3. \(t\cdot (O+O)=t\cdot O\).  
-   *Giustificazione.* Moltiplicazione per scalare ben definita.
+3. \(t\cdot (O+O)=t\cdot O\).   (Moltiplicazione per scalare ben definita.)
 
-4. \(t\cdot O + t\cdot O = t\cdot O\).  
-   *Giustificazione.* Distributività della moltiplicazione per scalare rispetto alla somma di vettori.
+4. \(t\cdot O + t\cdot O = t\cdot O\).   (Distributività della moltiplicazione per scalare rispetto alla somma di vettori.)
 
-5. Sommo \(-\big(t\cdot O\big)\) ad ambo i membri:  
-   \((t\cdot O + t\cdot O) + (-t\cdot O) = t\cdot O + (-t\cdot O)\).  
-   *Giustificazione.* Esistenza dell’opposto e associatività.
+5. Sommo \(-\big(t\cdot O\big)\) ad ambo i membri:
+   \((t\cdot O + t\cdot O) + (-t\cdot O) = t\cdot O + (-t\cdot O)\).   (Oposto e associatività.)
 
-6. Ottengo \(t\cdot O = O\).  
-   *Giustificazione.* \(x+(-x)=O\).
+6. Ottengo \(t\cdot O = O\).   (\(x+(-x)=O\).)
 
 
 
@@ -66,22 +65,17 @@ Dedurre dall'esercizio 2 che se \(t \cdot v = O\), allora \(t = 0\) oppure \(v =
 
 **Dimostrazione**
 
-1. Se \(t=0\), allora per l’Esercizio 1 \(0\cdot v=O\). Tesi verificata.  
-   *Giustificazione.* Caso banale.
+1. Se \(t=0\), allora per l’Esercizio 1 \(0\cdot v=O\). Tesi verificata.   (Caso banale.)
 
-2. Supponi \(t\neq 0\). Allora esiste l’inverso \(t^{-1}\in\mathbb{R}\) con \(t^{-1}t=1\).  
-   *Giustificazione.* \((\mathbb{R}\setminus\{0\},\cdot)\) è un gruppo.
+2. Supponi \(t\neq 0\). Allora esiste l’inverso \(t^{-1}\in\mathbb{R}\) con \(t^{-1}t=1\).   (\((\mathbb{R}\setminus\{0\},\cdot)\) è un gruppo.)
 
-3. Moltiplica l’uguaglianza \(t\cdot v=O\) per \(t^{-1}\):  
-   \(t^{-1}\cdot (t\cdot v) = t^{-1}\cdot O\).  
-   *Giustificazione.* Operazione per scalare su ambo i membri.
+3. Moltiplica l’uguaglianza \(t\cdot v=O\) per \(t^{-1}\):
+   \(t^{-1}\cdot (t\cdot v) = t^{-1}\cdot O\).   (Operazione per scalare.)
 
-4. Per associatività della moltiplicazione scalare e definizione di \(1\cdot v\):  
-   \((t^{-1}t)\cdot v = 1\cdot v = v\). Quindi \(v = t^{-1}\cdot O\).  
-   *Giustificazione.* Proprietà di unità.
+4. Per associatività della moltiplicazione scalare e definizione di \(1\cdot v\):
+   \((t^{-1}t)\cdot v = 1\cdot v = v\). Quindi \(v = t^{-1}\cdot O\).   (Proprietà di unità.)
 
-5. Per l’Esercizio 2, \(t^{-1}\cdot O=O\). Dunque \(v=O\).  
-   *Giustificazione.* Proposizione precedente.
+5. Per l’Esercizio 2, \(t^{-1}\cdot O=O\). Dunque \(v=O\).   (Proposizione precedente.)
 
 6. Concludiamo: se \(t\neq 0\) allora \(v=O\); quindi in generale \(t=0\) **oppure** \(v=O\).  
    
@@ -97,17 +91,14 @@ W=\{p\in\mathcal{P}: p(1)=p(2)=0\}.
 
 **Dimostrazione**
 
-1. **Zero in \(W\).** Il polinomio nullo \(p_0(x)\equiv 0\) soddisfa \(p_0(1)=0\) e \(p_0(2)=0\).  
-   *Giustificazione.* Valutazione diretta.
+1. **Zero in \(W\).** Il polinomio nullo \(p_0(x)\equiv 0\) soddisfa \(p_0(1)=0\) e \(p_0(2)=0\).   (Valutazione diretta.)
 
 2. **Chiusura per somma.** Se \(p_1,p_2\in W\), allora  
    \((p_1+p_2)(1)=p_1(1)+p_2(1)=0+0=0\) e  
    \((p_1+p_2)(2)=p_1(2)+p_2(2)=0+0=0\).  
-   *Giustificazione.* Linearità della valutazione.
 
 3. **Chiusura per scalare.** Se \(p\in W\) e \(\lambda\in\mathbb{R}\), allora  
    \((\lambda p)(1)=\lambda p(1)=\lambda\cdot 0=0\) e analogamente per \(x=2\).  
-   *Giustificazione.* Linearità della valutazione.
 
 4. Sono verificate le tre condizioni: \(W\) è un s.s.v.  
    
@@ -124,8 +115,7 @@ Per quali \(p\in\mathcal{P}\) il grafico \(\Gamma=\{(x,p(x)) : x\in\mathbb{R}\}\
 
 **Dimostrazione (passi chiave)**
 
-1. **Origine.** Se \(\Gamma\) è s.s.v., allora \((0,0)\in\Gamma\), quindi \(p(0)=0\).  
-   *Giustificazione.* Un s.s.v. contiene il vettore nullo.
+1. **Origine.** Se \(\Gamma\) è s.s.v., allora \((0,0)\in\Gamma\), quindi \(p(0)=0\).   (Un s.s.v. contiene il vettore nullo.)
 
 2. **Somma.** Se \((x_1,p(x_1))\) e \((x_2,p(x_2))\) sono in \(\Gamma\), la loro somma  
    \((x_1+x_2,\; p(x_1)+p(x_2))\) deve stare in \(\Gamma\).  
@@ -133,13 +123,11 @@ Per quali \(p\in\mathcal{P}\) il grafico \(\Gamma=\{(x,p(x)) : x\in\mathbb{R}\}\
    \[
    p(x_1+x_2)=p(x_1)+p(x_2).
    \]  
-   *Giustificazione.* Chiusura per somma: equazione di Cauchy additiva.
 
 3. **Scalari.** Per ogni \(\lambda\in\mathbb{R}\), \(\lambda(x,p(x))=(\lambda x,\lambda p(x))\in\Gamma\) implica  
    \[
    p(\lambda x)=\lambda\,p(x)\quad\text{per ogni }x,\lambda.
    \]  
-   *Giustificazione.* Chiusura per prodotto per scalare: omogeneità di grado 1.
 
 4. **Conclusione.** Un polinomio che è additivo e omogeneo di grado 1 è necessariamente lineare **senza termine noto**: \(p(x)=ax\).  
    Polinomi di grado \(\ge 2\) violano l’additività (es. \(x^2\): \(1^2+3^2\neq (1+3)^2\)).  
@@ -160,24 +148,20 @@ W=\{A\in M_{2,2}(\mathbb{R}) : A=-A^{T}\}.
    \[
    A=\begin{pmatrix}0&b\\ -b&0\end{pmatrix},\quad b\in\mathbb{R}.
    \]
-   *Giustificazione.* Definizione di trasposta e uguaglianza di matrici.
 
 2. **Chiusura per somma.** Siano $A_1,A_2\in W$. Allora $A_1=-A_1^T$ e $A_2=-A_2^T$.  
    \[
    (A_1+A_2)^T=A_1^T+A_2^T=-(A_1+A_2).
    \]
    Quindi $A_1+A_2\in W$.  
-   *Giustificazione.* Linearità della trasposizione.
 
 3. **Chiusura per scalare.** Per $\lambda\in\mathbb{R}$ e $A\in W$:
    \[
    (\lambda A)^T=\lambda A^T=\lambda(-A)=-(\lambda A),
    \]
    dunque $\lambda A\in W$.  
-   *Giustificazione.* Linearità della trasposizione e proprietà del prodotto per scalare.
 
-4. **Zero in $W$.** La matrice nulla $0$ verifica $0=-0^T$.  
-   *Giustificazione.* Trasposta di zero è zero.
+4. **Zero in $W$.** La matrice nulla $0$ verifica $0=-0^T$.   (Trasposta di zero è zero.)
 
 5. Verificate le tre condizioni, $W$ è un s.s.v. di $M_{2,2}(\mathbb{R})$. 
 
@@ -192,15 +176,12 @@ Determinare $k\in\mathbb{R}$ per cui $W\cup U_k$ è un s.s.v.
 
 **Soluzione**
 
-1. $\dim W=2$ (vincolo lineare $x=-y-z$: due variabili libere $y,z$).  
-   *Giustificazione.* Parametrizzazione: $(x,y,z)=y(-1,1,0)+z(-1,0,1)$.
+1. $\dim W=2$ (vincolo lineare $x=-y-z$: due variabili libere $y,z$).   (Parametrizzazione: $(x,y,z)=y(-1,1,0)+z(-1,0,1)$.)
 
-2. $\dim U_k=1$ per ogni $k$ (è lo span di un vettore non nullo).  
-   *Giustificazione.* Un solo generatore non nullo $\Rightarrow$ base.
+2. $\dim U_k=1$ per ogni $k$ (è lo span di un vettore non nullo).   (Un solo generatore non nullo $\Rightarrow$ base.)
 
 3. **Fatto chiave.** $W\cup U_k$ è s.s.v. $\Rightarrow$ uno è contenuto nell’altro.  
    Poiché $\dim U_k=1<2=\dim W$, l’unico caso possibile è $U_k\subseteq W$.  
-   *Giustificazione.* Se fosse $W\subseteq U_k$, avremmo $2\le 1$, assurdo.
 
 4. Condizione di inclusione: il generatore $(1,k,2)$ deve soddisfare l’equazione di $W$:
    \[
@@ -223,11 +204,9 @@ L(v_1,v_2)=L(v_1)+L(v_2).
 1. **$\subseteq$** Sia $x\in L(v_1,v_2)$. Allora $x=\alpha v_1+\beta v_2$ per qualche $\alpha,\beta\in\mathbb{R}$.  
    Scrivo $x=(\alpha v_1)+(\beta v_2)$ con $\alpha v_1\in L(v_1)$ e $\beta v_2\in L(v_2)$.  
    Quindi $x\in L(v_1)+L(v_2)$.  
-   *Giustificazione.* Definizione di somma di sottoinsiemi: $A+B=\{a+b: a\in A,\ b\in B\}$.
 
 2. **$\supseteq$** Sia $y\in L(v_1)+L(v_2)$. Allora $y=a+b$ con $a\in L(v_1)$, $b\in L(v_2)$.  
    Esistono $\alpha,\beta$ con $a=\alpha v_1$, $b=\beta v_2$, dunque $y=\alpha v_1+\beta v_2\in L(v_1,v_2)$.  
-   *Giustificazione.* Definizione di span.
 
 3. Le due inclusioni danno l’uguaglianza: $L(v_1,v_2)=L(v_1)+L(v_2)$. 
 
@@ -251,7 +230,6 @@ L(v_1,v_2)\subseteq L(w_1,\dots,w_n).
    x=a\sum_{i=1}^n \alpha_i w_i+b\sum_{i=1}^n \beta_i w_i
     =\sum_{i=1}^n (a\alpha_i+b\beta_i)\,w_i \in L(w_1,\dots,w_n).
    \]
-   *Giustificazione.* Chiusura di $L(w_1,\dots,w_n)$ per combinazioni lineari.
 
 3. Quindi $L(v_1,v_2)\subseteq L(w_1,\dots,w_n)$. 
 
@@ -265,16 +243,14 @@ W_1\subseteq W_2\quad\text{oppure}\quad W_2\subseteq W_1.
 
 **Dimostrazione (per assurdo)**
 
-1. Supponiamo **non** valga nessuna inclusione: $W_1\nsubseteq W_2$ e $W_2\nsubseteq W_1$.  
-   *Giustificazione.* Negazione della tesi.
+1. Supponiamo **non** valga nessuna inclusione: $W_1\nsubseteq W_2$ e $W_2\nsubseteq W_1$.   (Negazione della tesi.)
 
 2. Esistono allora
    \[
    w\in W_1\setminus W_2,\qquad u\in W_2\setminus W_1.
    \]
 
-3. Poiché $W_1\cup W_2$ è s.s.v., è **chiuso per somma**, dunque $w+u\in W_1\cup W_2$.  
-   *Giustificazione.* Proprietà dei sottospazi.
+3. Poiché $W_1\cup W_2$ è s.s.v., è **chiuso per somma**, dunque $w+u\in W_1\cup W_2$.   (Proprietà dei sottospazi.)
 
 4. **Caso A:** $w+u\in W_1$. Allora $u=(w+u)-w\in W_1$ (chiusura di $W_1$ per opposto e somma), ma questo contraddice $u\notin W_1$.
 

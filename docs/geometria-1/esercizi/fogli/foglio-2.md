@@ -1,4 +1,10 @@
-# Geometria I – Foglio 2
+
+# Foglio 2
+## Prerequisiti
+
+- Basi e dimensione degli spazi vettoriali.
+- Formula di Grassman.
+- Applicazioni lineari elementari.
 
 ## Esercizio 1
 Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per opportuni generatori \(v_{1},\dots,v_{k}\).

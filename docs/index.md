@@ -4,10 +4,13 @@ Axio, la nostra mascotte, ti dà il benvenuto.
 
 > **Axiom Paths**: il percorso degli assiomi verso la comprensione.
 
+!!! info "Novità"
+    🎉 Ora abbiamo un nuovo dominio: [axiompaths.org](https://axiompaths.org) — Axio salta di gioia!
+
 !!! warning "Ricorda"
     Siamo studenti e possiamo sbagliare: mantieni sempre il pensiero critico!
 
-Axiom Paths è un progetto open-source che raccoglie appunti ed esercizi di matematica.  
+Axiom Paths è un progetto open-source che raccoglie appunti ed esercizi di matematica.
 Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno lungo il cammino.
 
 ---

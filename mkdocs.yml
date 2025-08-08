@@ -43,14 +43,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: index.md
-  - Analisi 1:
-      - Teoria:
-          - Limiti: analisi-1/teoria/limiti.md
-      - Esercizi:
-          - Limiti: analisi-1/esercizi/limiti-esercizi.md
-  - Geometria 1:
-      - Teoria:
+  - "🏠 Home": index.md
+  - "📈 Analisi 1": analisi-1/index.md
+  - "📐 Geometria 1":
+      - "📚 Teoria":
           - Spazi Vettoriali:
               - Introduzione: geometria-1/teoria/spazi-vettoriali/index.md
               - Definizioni e Proprietà: geometria-1/teoria/spazi-vettoriali/definizioni.md
@@ -66,14 +62,14 @@ nav:
           - Duali e Forme Bilineari: geometria-1/teoria/duali-e-forme-bilineari/index.md
           - Prodotto Scalare e Ortonormalità: geometria-1/teoria/prodotto-scalare-e-ortonormalita/index.md
           - Teoremi Classici della Geometria Proiettiva: geometria-1/teoria/teoremi-classici-geometria-proiettiva/index.md
-      - Esercizi:
+      - "📝 Esercizi":
           - Tematici:
               - Spazi Vettoriali: geometria-1/esercizi/tematici/spazi-vettoriali.md
               - Applicazioni Lineari e Matrici: geometria-1/esercizi/tematici/applicazioni-lineari-e-matrici.md
           - Fogli:
               - Foglio 1: geometria-1/esercizi/fogli/foglio-1.md
               - Foglio 2: geometria-1/esercizi/fogli/foglio-2.md
-      - Esami:
+      - "🎓 Esami":
           - Calcoloso: geometria-1/esami/calcoloso/index.md
           - Teorico: geometria-1/esami/teorico/index.md
           - Bomber: geometria-1/esami/bomber/index.md

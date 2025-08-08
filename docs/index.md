@@ -1,4 +1,4 @@
-# Benvenuto su Axiom Paths
+# 👋 Benvenuto su Axiom Paths
 
 Axio, la nostra mascotte, ti dà il benvenuto.
 
@@ -12,20 +12,13 @@ Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno 
 
 ---
 
-## Inizia il viaggio
+## 🚀 Inizia il viaggio
 
-### Analisi 1
+### 📈 Analisi 1
 
-- **Teoria**
-  - In arrivo presto...
+Contenuti in arrivo ⏳
 
-- **Esercizi**
-  - In arrivo presto...
-
-- **Esami**
-  - In arrivo presto...
-
-### Geometria 1
+### 📐 Geometria 1
 
 - **Teoria**
   - [Spazi Vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)

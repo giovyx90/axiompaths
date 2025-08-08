@@ -2,6 +2,8 @@
 
 Grazie per voler migliorare questa raccolta aperta di appunti. Con queste regole chiunque, anche senza esperienza di programmazione, può partecipare in modo semplice.
 
+Se non hai un account GitHub puoi inviare il materiale a [contributi@axiompaths.org](mailto:contributi@axiompaths.org).
+
 ## ✅ Passaggi per inviare un contributo
 1. **Forka** o usa l’editor online di GitHub: non servono strumenti particolari.
 2. **Crea o modifica** un file `.md` nella cartella corretta (`docs/…`).
@@ -66,4 +68,4 @@ Mantieni le pagine leggibili e piacevoli evitando eccessi grafici. Indici e home
 Quando può aiutare lo studio, inserisci link a teorie o esercizi correlati.
 
 ## ❓ Dubbi o problemi?
-Apri una [Issue](https://github.com/username/Axiom-Paths/issues).
+Apri una [Issue](https://github.com/username/Axiom-Paths/issues) oppure scrivi a [info@axiompaths.org](mailto:info@axiompaths.org).

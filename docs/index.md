@@ -6,5 +6,5 @@
 ---
 
 !!! example "Inizia da qui"
-    - **Analisi 1** → [Limiti](analisi-1/teoria/limiti.md), [Derivate](analisi-1/teoria/derivate.md)
-    - **Algebra Lineare** → [Spazi vettoriali](algebra-lineare/teoria/spazi-vettoriali.md)
+    - **Analisi 1** → [Limiti](analisi-1/teoria/limiti.md)
+    - **Geometria 1** → [Spazi vettoriali](geometria-1/teoria/spazi-vettoriali.md)

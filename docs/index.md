@@ -15,7 +15,9 @@ Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno 
 ## Inizia il viaggio
 
 - **Analisi 1** → [Limiti](analisi-1/teoria/limiti.md)
-- **Geometria 1** → [Spazi vettoriali](geometria-1/teoria/spazi-vettoriali.md)
+- **Geometria 1**
+  - [Spazi vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
+  - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
 
 ---
 

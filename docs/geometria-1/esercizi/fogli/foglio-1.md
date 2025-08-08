@@ -1,5 +1,16 @@
 # Geometria I – Foglio 1
 
+## Prerequisiti
+
+- Definizione di spazio vettoriale e sue proprietà.
+- Operazioni tra vettori: somma, opposto e prodotto per scalare.
+- Sottospazi vettoriali.
+- Combinazioni lineari, span e dipendenza lineare.
+- Conoscenza di polinomi reali e matrici \(2\times 2\).
+
+!!! tip "Axio"
+    Ripassa le definizioni con esempi concreti: ti renderà più sicuro negli esercizi!
+
 ## Esercizio 1
 Dimostrare che in uno spazio vettoriale \(V\), abbiamo che \(0\cdot v = O\) per ogni \(v \in V\) (qui \(O \in V\) e \(0 \in \mathbb{R}\)) usando solo le altre proprietà della definizione di spazio vettoriale.
 

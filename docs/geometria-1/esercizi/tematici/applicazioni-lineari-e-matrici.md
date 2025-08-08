@@ -1,5 +1,10 @@
 # Esercizi sulle Applicazioni Lineari e Matrici
 
+Pagina con esercizi per praticare trasformazioni lineari e matrici associate.
+
+!!! tip "Axio"
+    Analizza passo dopo passo: ogni operazione elementare svela la struttura nascosta della matrice.
+
 ## Obiettivo della tematica
 
 Allenare al calcolo di rango, nucleo e immagine di trasformazioni lineari mediante rappresentazioni matriciali.

@@ -1,5 +1,7 @@
 # Teoremi sulle Basi
 
+Raccogliamo alcuni risultati utili per manipolare le basi e comprendere la dimensione.
+
 ## Insiemi massimali
 
 Un insieme $\{v_1,\dots,v_r\}\subseteq V$ è **massimale** se ogni altro

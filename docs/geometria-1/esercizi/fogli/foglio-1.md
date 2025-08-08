@@ -1,5 +1,7 @@
 # Geometria I – Foglio 1
 
+Primo foglio di esercizi per mettere in pratica i concetti base dell'algebra lineare.
+
 ## Prerequisiti
 
 - Definizione di spazio vettoriale e sue proprietà.

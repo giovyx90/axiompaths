@@ -1,6 +1,11 @@
 # Esercizi sugli Spazi Vettoriali
 
-**Esercizio**  
+Breve raccolta di esercizi per consolidare le nozioni sugli spazi vettoriali.
+
+!!! tip "Axio"
+    Sperimenta strategie diverse: ogni esercizio è un'opportunità per scoprire nuovi collegamenti.
+
+**Esercizio**
 Dimostra che le seguenti terne di vettori in $\mathbb{R}^4$ sono linearmente indipendenti:
 
 $$

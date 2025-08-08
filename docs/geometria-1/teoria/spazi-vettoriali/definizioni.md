@@ -1,5 +1,7 @@
 # Definizioni e Proprietà
 
+Introduciamo la definizione formale di spazio vettoriale e le proprietà che regolano le sue operazioni.
+
 Uno **spazio vettoriale** è una struttura $(V,+,\cdot)$ definita su un campo $\mathbb{K}$
 dotata di due operazioni:
 

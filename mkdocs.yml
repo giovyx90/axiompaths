@@ -69,6 +69,7 @@ nav:
       - Esercizi:
           - Tematici:
               - Spazi Vettoriali: geometria-1/esercizi/tematici/spazi-vettoriali.md
+              - Applicazioni Lineari e Matrici: geometria-1/esercizi/tematici/applicazioni-lineari-e-matrici.md
           - Fogli:
               - Foglio 1: geometria-1/esercizi/fogli/foglio-1.md
               - Foglio 2: geometria-1/esercizi/fogli/foglio-2.md

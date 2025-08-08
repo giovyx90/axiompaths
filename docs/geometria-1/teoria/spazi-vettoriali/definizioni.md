@@ -13,53 +13,56 @@ dotata di due operazioni:
 
 Le operazioni rispettano le seguenti proprietà:
 
-1. **Associatività della somma**: per ogni $u,v,w\in V$,
+!!! tip "Axio"
+    Tieni a mente queste leggi: sono la base per comprendere tutti gli spazi vettoriali!
 
-   \[
-   (u+v)+w = u+(v+w)
-   \]
+1. **Associatività della somma**: per ogni $u,v,w\in V$,
+    
+    \[
+    (u+v)+w = u+(v+w)
+    \]
 
 2. **Elemento neutro della somma**: esiste $O\in V$ tale che
-
-   \[
-   O+v = v+O = v
-   \]
+    
+    \[
+    O+v = v+O = v
+    \]
 
 3. **Inverso additivo**: per ogni $v\in V$ esiste $-v\in V$ con
-
-   \[
-   v+(-v)=O
-   \]
+    
+    \[
+    v+(-v)=O
+    \]
 
 4. **Commutatività della somma**: per ogni $v,w\in V$,
-
-   \[
-   v+w=w+v
-   \]
+    
+    \[
+    v+w=w+v
+    \]
 
 5. **Distributività rispetto agli scalari**: per ogni $c\in\mathbb{K}$ e $u,v\in V$,
-
-   \[
-   c(u+v)=cu+cv
-   \]
+    
+    \[
+    c(u+v)=cu+cv
+    \]
 
 6. **Distributività degli scalari**: per ogni $a,b\in\mathbb{K}$ e $v\in V$,
-
-   \[
-   (a+b)v=av+bv
-   \]
+    
+    \[
+    (a+b)v=av+bv
+    \]
 
 7. **Associatività del prodotto per scalare**: per ogni $a,b\in\mathbb{K}$ e $v\in V$,
-
-   \[
-   (ab)v=a(bv)
-   \]
+    
+    \[
+    (ab)v=a(bv)
+    \]
 
 8. **Elemento neutro del prodotto per scalare**: per ogni $v\in V$,
-
-   \[
-   1\cdot v = v
-   \]
+    
+    \[
+    1\cdot v = v
+    \]
 
 ### Esempio: $\mathbb{K}^n$
 

@@ -10,8 +10,11 @@
 Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per opportuni generatori \(v_{1},\dots,v_{k}\).
 
 1. \(W=\{(x,y,z)^T\in\mathbb{R}^3 : x-3y+3z=0\}\)
+
 2. \(W=\{(x,y,z)^T\in\mathbb{R}^3 : x+2y=0,\ z+3x=0\}\)
+
 3. \(W=\{(x,y,z,t)^T\in\mathbb{R}^4 : x+y=0,\ z+t=0\}\)
+
 4. \(W=\{(x,y,z,t)^T\in\mathbb{R}^4 : x+y=0,\ z+t=0,\ x+z+t=0\}\)
 
 **Soluzione**
@@ -24,6 +27,7 @@ Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per 
   \[
   (x,y,z)^T = y\,(3,1,0)^T + z\,(-3,0,1)^T,
   \]
+ 
   da cui \(W=L((3,1,0)^T,(-3,0,1)^T)\).
 
 - Per (2) si ottiene \(x=-2y\) e \(z=6y\), perciò
@@ -31,6 +35,7 @@ Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per 
   \[
   (x,y,z)^T = y\,(-2,1,6)^T,
   \]
+ 
   e \(W=L((-2,1,6)^T)\).
 
 - Per (3) dalle equazioni segue \(x=-y\) e \(z=-t\). Allora
@@ -38,6 +43,7 @@ Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per 
   \[
   (x,y,z,t)^T = y\,(-1,1,0,0)^T + t\,(0,0,-1,1)^T,
   \]
+ 
   quindi \(W=L((-1,1,0,0)^T,(0,0,-1,1)^T)\).
 
 - Per (4) le prime due equazioni danno ancora \(x=-y\) e \(z=-t\). Sostituendo nella terza si ottiene \(-y=0\), dunque \(x=0\) e 
@@ -45,6 +51,7 @@ Scrivere i seguenti sottospazi \(W\) nella forma \(W=L(v_{1},\dots,v_{k})\) per 
   \[
   (x,y,z,t)^T = t\,(0,0,-1,1)^T,
   \]
+ 
   per cui \(W=L((0,0,-1,1)^T)\).
 
 !!! warning "Errori comuni"

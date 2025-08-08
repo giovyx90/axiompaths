@@ -1,5 +1,10 @@
 # Combinazioni Lineari e Dipendenza
 
+Scopriamo come combinare vettori e distinguere tra dipendenza e indipendenza lineare.
+
+!!! tip "Axio"
+    Prova a giocare con esempi concreti: aiutano a intuire quando i vettori collaborano o si annullano!
+
 Dati vettori $v_1,\dots,v_n\in V$ e scalari $x_1,\dots,x_n\in\mathbb{K}$,
 una **combinazione lineare** è
 

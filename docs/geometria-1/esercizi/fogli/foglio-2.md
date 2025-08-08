@@ -1,5 +1,8 @@
 
 # Foglio 2
+
+Secondo foglio di esercizi dedicato a basi, dimensione e trasformazioni lineari.
+
 ## Prerequisiti
 
 - Basi e dimensione degli spazi vettoriali.

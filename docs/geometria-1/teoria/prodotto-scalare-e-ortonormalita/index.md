@@ -2,6 +2,10 @@
 
 In questa sezione introdurremo il prodotto scalare e le sue proprietà.
 
+## Contenuti
+
+- In arrivo presto...
+
 !!! tip "Axio"
     Il prodotto scalare misura quanto due vettori puntano nella stessa direzione!
 

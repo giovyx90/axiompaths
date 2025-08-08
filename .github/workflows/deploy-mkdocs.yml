@@ -1,7 +1,7 @@
 name: Deploy MkDocs
 on:
   push:
-    branches: [gh-pages]  # o il branch dove fai i merge
+    branches: [main]  # o il branch dove fai i merge
 
 jobs:
   build-and-deploy:

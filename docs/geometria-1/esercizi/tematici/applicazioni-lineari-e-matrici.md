@@ -3,6 +3,7 @@
 **Esercizio**
 
 Sia
+
 \[
 A=\begin{pmatrix}
 1 & 2 & k\\
@@ -10,6 +11,7 @@ A=\begin{pmatrix}
 1 & k & 4
 \end{pmatrix}, \qquad k\in\mathbb{R}.
 \]
+
 Determina i valori di \(k\) per cui \(\operatorname{rank}(A)=3\) e quelli per cui \(\operatorname{rank}(A)<3\).
 Per i valori con \(\operatorname{rank}(A)<3\) trova una base del nucleo.
 Per tutti i valori di \(k\), individua una base dell'immagine.

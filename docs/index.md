@@ -18,6 +18,7 @@ Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno 
 - **Geometria 1**
   - [Spazi vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
   - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
+  - [Foglio 2](geometria-1/esercizi/fogli/foglio-2.md)
 
 ---
 

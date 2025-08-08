@@ -52,5 +52,7 @@ nav:
   - Geometria 1:
       - Teoria:
           - Spazi Vettoriali: geometria-1/teoria/spazi-vettoriali.md
+      - Esercizi:
+          - Spazi Vettoriali: geometria-1/esercizi/spazi-vettoriali.md
       - Fogli di Esercizi:
           - Foglio 1: geometria-1/fogli/foglio-1.md

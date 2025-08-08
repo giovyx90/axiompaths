@@ -18,7 +18,7 @@ Consulta la [guida per contribuire](CONTRIBUTING.md).
 ---
 
 ## 🌐 Sito Web
-Presto disponibile (MkDocs + GitHub Pages)!
+Il sito è disponibile all'indirizzo https://giovyx90.github.io/axiompaths/.
 
 ---
 

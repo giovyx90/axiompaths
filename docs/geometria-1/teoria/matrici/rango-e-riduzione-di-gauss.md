@@ -21,12 +21,13 @@ dove $a_1,\dots,a_n$ non sono tutti nulli. Questo spazio ha dimensione $n-1$. L'
 
 ## Riduzione di Gauss
 
-Per risolvere un sistema si usano le **operazioni elementari sulle righe**:
+Per risolvere un sistema si applicano alla matrice completa le **operazioni elementari sulle righe**:
 
 1. scambio di due righe;
-2. addizione a una riga di un multiplo di un'altra.
+2. addizione a una riga di un multiplo di un'altra;
+3. moltiplicazione di una riga per un numero non nullo.
 
-Queste operazioni non alterano l'insieme delle soluzioni. Applicandole si ottiene una **matrice a scala**, in cui i pivot di ogni riga compaiono in colonne sempre più a destra.
+Queste operazioni non alterano l'insieme delle soluzioni. Applicandole si ottiene una **matrice a scala** (row echelon form, REF), in cui i pivot di ogni riga compaiono in colonne sempre più a destra. Proseguendo con le operazioni si possono annullare gli elementi sopra i pivot e normalizzare questi ultimi, ottenendo la **matrice a scala ridotta** (reduced row echelon form, RREF).
 
 Una matrice ridotta a scala assume quindi la forma
 
@@ -63,11 +64,19 @@ Per una matrice $A$ con righe $A_1,\dots,A_k\in\mathbb{R}^n$ il **rango per righ
 \operatorname{rk}_r(A)=\dim\operatorname{Span}(A_1,\dots,A_k).
 \]
 
+Se $C_1,\dots,C_n\in\mathbb{R}^k$ sono le colonne di $A$, il **rango per colonne** è
+
+\[
+\operatorname{rk}_c(A)=\dim\operatorname{Span}(C_1,\dots,C_n).
+\]
+
+Si dimostra che $\operatorname{rk}_r(A)=\operatorname{rk}_c(A)$; il valore comune è il **rango** di $A$.
+
 Le operazioni elementari non modificano il rango, e la riduzione di Gauss produce una matrice a scala $S$ con lo stesso rango. Il numero di pivot di $S$ coincide con $\operatorname{rk}_r(A)$ e fornisce la dimensione dello spazio delle soluzioni del sistema omogeneo $AX=0$ come $n-r$.
 
 ## Sistemi non Omogenei e Teorema di Rouché-Capelli
 
-Per un sistema $AX=b$ si considera la **matrice completa** $\widetilde{A}=(A\mid b)$. 
+Per un sistema $AX=b$ si considera la **matrice completa** $\widetilde{A}=(A\mid b)$ e la si riduce a scala tramite le operazioni elementari.
 
 **Teorema (Rouché‑Capelli).** Il sistema è risolubile se e solo se
 

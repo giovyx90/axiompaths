@@ -85,3 +85,17 @@ v = -\frac{1}{\alpha}\sum_{i=1}^n \beta_i b_i.
 $$
 
 Almeno un $\beta_j$ è non nullo; sostituendo $b_j$ con $v$ otteniamo un insieme di $n$ vettori che genera $V$ e rimane indipendente, quindi è una base.
+
+### Teorema di completamento
+
+Sia $\{v_1,\dots,v_k\}\subseteq V$ un insieme indipendente. Allora esiste una base di $V$ che contiene $\{v_1,\dots,v_k\}$.
+
+**Dimostrazione.**
+
+Se $k = \dim V$, l'insieme è già una base. Supponiamo $k < \dim V$ e sia $B = \{b_1,\dots,b_n\}$ una base di $V$. L'insieme $B \cup \{v_1,\dots,v_k\}$ genera $V$.
+
+Applichiamo il lemma di scambio: sostituiamo successivamente alcuni $b_j$ con i $v_i$ mantenendo un insieme di $n$ vettori che genera $V$. Dopo $k$ passi otteniamo una base che contiene tutti i $v_i$, cioè un completamento dell'insieme iniziale.
+
+!!! tip "Axio"
+    Vuoi un esercizio? Prendi due vettori indipendenti nello spazio delle matrici $2\times 2$ e prova a completarli a una base!
+

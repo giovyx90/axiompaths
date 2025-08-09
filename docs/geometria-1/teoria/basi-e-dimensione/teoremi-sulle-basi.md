@@ -1,6 +1,6 @@
 # Teoremi sulle Basi
 
-Raccogliamo alcuni risultati utili per manipolare le basi e comprendere la dimensione.
+Raccogliamo alcuni risultati utili per manipolare le [basi](basi.md) e comprendere la dimensione.
 
 ## Insiemi massimali
 

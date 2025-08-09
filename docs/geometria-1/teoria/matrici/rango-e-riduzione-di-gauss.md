@@ -98,15 +98,15 @@ X=X_0+Y, \qquad Y\in\ker A.
 2. **Caso compatibile ⇒ ranghi uguali**  
    Se il sistema è compatibile, non compare alcuna riga del tipo
 
-   \[
-   (0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0
-   \]
+\[
+(0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0
+\]
 
    Questo implica che $b$ è combinazione lineare delle colonne di $A$ e la colonna aggiunta non aumenta il rango:
 
-   \[
-   \operatorname{rk}_r(\widetilde{A})=\operatorname{rk}_r(A).
-   \]
+\[
+\operatorname{rk}_r(\widetilde{A})=\operatorname{rk}_r(A).
+\]
 
 3. **Caso ranghi uguali ⇒ compatibile**  
    Se i ranghi coincidono, la colonna $b$ è combinazione lineare delle colonne di $A$. Esiste quindi $X$ tale che $AX=b$, e il sistema è risolubile.
@@ -114,9 +114,9 @@ X=X_0+Y, \qquad Y\in\ker A.
 4. **Caso ranghi diversi ⇒ incompatibile**  
    Se $\operatorname{rk}_r(\widetilde{A})>\operatorname{rk}_r(A)$, comparirà una riga
 
-   \[
-   (0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0,
-   \]
+\[
+(0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0,
+\]
 
    che rappresenta l'equazione impossibile $0=c$. Il sistema è quindi incompatibile.
 

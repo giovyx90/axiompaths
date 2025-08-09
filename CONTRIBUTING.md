@@ -24,13 +24,11 @@ Se non hai un account GitHub puoi inviare il materiale a [contributi@axiompaths.
   - **Inline:** `$a^2+b^2=c^2`.
   - **Blocco:** lascia sempre una riga vuota sopra e sotto.
 
-    ```
-
-    $$
-    \int_a^b f(x)\,dx
-    $$
-
-    ```
+```
+$$
+\int_a^b f(x)\,dx
+$$
+```
 
 ## 🗂️ Catalogazione degli esercizi
 - Gli esercizi **non da esame** sono raccolti per argomento.
@@ -69,3 +67,9 @@ Quando può aiutare lo studio, inserisci link a teorie o esercizi correlati.
 
 ## ❓ Dubbi o problemi?
 Apri una [Issue](https://github.com/username/Axiom-Paths/issues) oppure scrivi a [info@axiompaths.org](mailto:info@axiompaths.org).
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09
+    **Breve descrizione:** Rimossi gli indent nei blocchi formula di esempio.

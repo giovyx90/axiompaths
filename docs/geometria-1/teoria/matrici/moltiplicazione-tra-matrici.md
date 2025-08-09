@@ -39,9 +39,9 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
 !!! tip "Axio"
     Ogni elemento \(c_{ij}\) è il **prodotto scalare** tra la riga \(i\) di \(A\) e la colonna \(j\) di \(B\):
 
-    \[
+\[
     c_{ij} = \langle \text{riga}_i(A), \, \text{colonna}_j(B) \rangle
-    \]
+\]
 
     Tuttavia, la moltiplicazione di matrici **nel suo insieme** non è un unico prodotto scalare, ma un insieme organizzato di tanti prodotti scalari.
 
@@ -50,9 +50,9 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
 !!! tip "Axio"
     Se \(A\) è una matrice \(m \times n\) e vale
 
-    \[
+\[
     A X = 0 \quad \forall\, X \in \mathbb{K}^n
-    \]
+\]
 
     allora \(A = 0\).
 
@@ -60,9 +60,9 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
 
     Il caso duale: se
 
-    \[
+\[
     Y^\top A = 0 \quad \forall\, Y \in \mathbb{K}^m
-    \]
+\]
 
     allora \(A\) è nulla (tutte le righe nulle).
 
@@ -71,13 +71,13 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
 !!! tip "Axio"
     Nella moltiplicazione di matrici non vale:
 
-    \[
+\[
     A \cdot B = 0 \ \Rightarrow\ A=0 \ \text{o}\ B=0
-    \]
+\]
 
     Esempio:
 
-    \[
+\[
     A =
     \begin{pmatrix}
     1 & -1 \\
@@ -89,7 +89,7 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
     1 & 1 \\
     1 & 1
     \end{pmatrix}
-    \]
+\]
 
     entrambi non nulli, ma \(A \cdot B = 0\).
 
@@ -193,6 +193,6 @@ A \cdot A^{-1} =
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
-    **Breve descrizione:** Aggiunta pagina sulla moltiplicazione tra matrici.
+    **Data:** 2025-08-09
+    **Breve descrizione:** Rimossi gli indent dei blocchi formula per il corretto rendering.
 

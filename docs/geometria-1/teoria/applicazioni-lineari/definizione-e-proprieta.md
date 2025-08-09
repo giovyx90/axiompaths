@@ -78,9 +78,9 @@ Con la matrice $A=[F]_C^B$ si ottiene $\operatorname{Im} F = \operatorname{Span}
 
 1. **Funzionale su $\mathbb{R}^3$.** Per $L(x,y,z)=3x-2y+z$, la matrice è $A=[3\ -2\ 1]$ e
 
-   \[
-   \operatorname{Im} L = \mathbb{R}, \qquad \ker L = \{(x,y,z) : 3x-2y+z=0\}.
-   \]
+\[
+\operatorname{Im} L = \mathbb{R}, \qquad \ker L = \{(x,y,z) : 3x-2y+z=0\}.
+\]
 
 2. **Mappa coordinate.** La mappa $\Phi_B$ è un isomorfismo e la sua matrice rispetto a $B$ ed alla base canonica di $\mathbb{K}^n$ è $I_n$.
 
@@ -104,4 +104,4 @@ Un'applicazione $T: \mathbb{K}^n \to \mathbb{K}^m$ definita da combinazioni line
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
-    **Breve descrizione:** Prima stesura delle definizioni e proprietà delle applicazioni lineari.
+    **Breve descrizione:** Rimossi gli indent dei blocchi formula per il corretto rendering.

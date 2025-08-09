@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
       margin: 10,
       filename: (document.title || 'axiompaths') + '.pdf',
       image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: ['css', 'legacy', 'avoid-all'] }
     };
 
     // Ensure MathJax and fonts are fully loaded before rendering the PDF

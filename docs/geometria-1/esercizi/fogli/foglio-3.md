@@ -2,10 +2,14 @@
 
 Terzo foglio di esercizi dedicato a matrici e sottospazi.
 
+!!! warning "Axio ti avvisa"
+    Questo foglio è una bozza: gli esercizi potrebbero essere rivisti e l'elenco non è completo.
+
 ## Prerequisiti
 
 - [Definizioni e operazioni sulle matrici](../../teoria/matrici/definizioni.md)
 - [Basi e dimensione degli spazi vettoriali](../../teoria/basi-e-dimensione/basi.md)
+- [Sottospazi vettoriali](../../teoria/spazi-vettoriali/sottospazi.md)
 
 ## Esercizio 1
 Determinare la dimensione dello spazio
@@ -144,6 +148,58 @@ x+2y-3z=0,\\
 
 ---
 
+## Esercizio 4
+Siano
+
+\[
+v_{1}=\begin{pmatrix}1\\0\\1\\-1\end{pmatrix},\quad
+v_{2}=\begin{pmatrix}1\\1\\1\\2\end{pmatrix},\qquad
+u_{1}=\begin{pmatrix}0\\3\\0\\7\end{pmatrix},\quad
+u_{2}=\begin{pmatrix}1\\0\\0\\1\end{pmatrix}.
+\]
+
+Sia \(W_{1}=\operatorname{span}(v_{1},v_{2})\) e \(W_{2}=\operatorname{span}(u_{1},u_{2})\). Calcolare:
+
+1. \(\dim W_{1}\) e \(\dim W_{2}\);
+2. \(W_{1}\cap W_{2}\);
+3. \(\dim(W_{1}+W_{2})\).
+
+**Soluzione**
+
+!!! tip "Axio ti incoraggia"
+    Controlla l'intersezione prima di applicare la [formula di Grassmann](../../teoria/basi-e-dimensione/teorema-di-grassmann.md)!
+
+1. Le coppie \(\{v_{1},v_{2}\}\) e \(\{u_{1},u_{2}\}\) sono l.i., quindi \(\dim W_{1}=\dim W_{2}=2\).
+
+2. Un vettore comune soddisfa
+
+\[
+a v_{1}+b v_{2}=c u_{1}+d u_{2}.
+\]
+
+   Il sistema associato è
+
+\[
+\begin{cases}
+a+b=d,\\
+b=3c,\\
+a+b=0,\\
+-a+2b=7c+d.
+\end{cases}
+\]
+
+   Risolvendo si ottiene \(a=b=c=d=0\), per cui \(W_{1}\cap W_{2}=\{0\}\).
+
+3. Per la formula di Grassmann
+
+\[
+\dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=2+2-0=4,
+\]
+
+   dunque \(W_{1}+W_{2}=\mathbb{R}^{4}\).
+
+---
+
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
     **Breve descrizione:** Creato il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla.
@@ -153,4 +209,7 @@ x+2y-3z=0,\\
 
     **Data:** 2025-08-09
     **Breve descrizione:** Aggiunto esercizio sulla dimensione di \(W_{1}+W_{2}\).
+
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiunto esercizio sulla somma di due sottospazi in \(\mathbb{R}^{4}\).
 

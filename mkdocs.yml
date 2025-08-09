@@ -1,6 +1,6 @@
 site_name: Axiom Paths
 site_description: Wiki open-source di matematica, esercizi e appunti
-repo_url: https://github.com/TUO-USERNAME/Axiom-Paths
+repo_url: https://github.com/giovyx90/axiompaths
 
 theme:
   name: material

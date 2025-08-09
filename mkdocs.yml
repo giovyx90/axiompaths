@@ -64,7 +64,11 @@ nav:
               - Introduzione: geometria-1/teoria/basi-e-dimensione/index.md
               - Basi: geometria-1/teoria/basi-e-dimensione/basi.md
               - Teoremi sulle Basi: geometria-1/teoria/basi-e-dimensione/teoremi-sulle-basi.md
-          - Applicazioni Lineari e Matrici: geometria-1/teoria/applicazioni-lineari-e-matrici/index.md
+          - Matrici:
+              - Introduzione: geometria-1/teoria/matrici/index.md
+              - Definizioni e Operazioni: geometria-1/teoria/matrici/definizioni.md
+              - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
+          - Applicazioni Lineari: geometria-1/teoria/applicazioni-lineari/index.md
           - Autovalori e Autovettori: geometria-1/teoria/autovalori-e-autovettori/index.md
           - Forme Canoniche e Jordan: geometria-1/teoria/forme-canoniche-e-jordan/index.md
           - Duali e Forme Bilineari: geometria-1/teoria/duali-e-forme-bilineari/index.md
@@ -73,7 +77,7 @@ nav:
       - "📝 Esercizi":
           - Tematici:
               - Spazi Vettoriali: geometria-1/esercizi/tematici/spazi-vettoriali.md
-              - Applicazioni Lineari e Matrici: geometria-1/esercizi/tematici/applicazioni-lineari-e-matrici.md
+              - Applicazioni Lineari: geometria-1/esercizi/tematici/applicazioni-lineari-e-matrici.md
           - Fogli:
               - Foglio 1: geometria-1/esercizi/fogli/foglio-1.md
               - Foglio 2: geometria-1/esercizi/fogli/foglio-2.md

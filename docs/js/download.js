@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const h1 = article.querySelector('h1');
   (h1?.parentNode || article).insertBefore(btn, h1?.nextSibling || article.firstChild);
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', async () => {
     const opt = {
       margin: 10,
       filename: (document.title || 'axiompaths') + '.pdf',
@@ -16,6 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
       html2canvas: { scale: 2, useCORS: true },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
+
+    // Ensure MathJax and fonts are fully loaded before rendering the PDF
+    if (window.MathJax && MathJax.typesetPromise) {
+      await MathJax.typesetPromise();
+    }
+
+    if (document.fonts && document.fonts.ready) {
+      await document.fonts.ready;
+    }
 
     html2pdf()
       .set(opt)

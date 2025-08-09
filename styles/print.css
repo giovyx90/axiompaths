@@ -1,0 +1,12 @@
+.katex-display,
+table,
+figure {
+  page-break-inside: avoid;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

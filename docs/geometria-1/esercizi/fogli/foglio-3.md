@@ -87,10 +87,70 @@ Dalla seconda equazione otteniamo \(a=-2b\) e sostituendo ricaviamo \(c=-b\). No
 
 ---
 
+## Esercizio 3
+Siano
+
+\[
+W_{1}=\{(x,y,z)\in\mathbb{R}^{3}: x+2y-3z=0\}, \qquad W_{2}=\{(x,y,z)\in\mathbb{R}^{3}: -x+y+2z=0\}.
+\]
+
+Calcolare \(\dim(W_{1}+W_{2})\).
+
+**Soluzione**
+
+!!! tip "Axio ti ricorda"
+    La [formula di Grassmann](../../teoria/basi-e-dimensione/teorema-di-grassmann.md) può semplificare i conti se conosci le dimensioni dei sottospazi e della loro intersezione.
+
+1. Dall'equazione di \(W_{1}\) si ricava \(x=-2y+3z\), quindi
+
+\[
+(x,y,z)=y(-2,1,0)+z(3,0,1)
+\]
+
+   e \(\dim W_{1}=2\).
+
+2. Dall'equazione di \(W_{2}\) si ricava \(y=x-2z\), quindi
+
+\[
+(x,y,z)=x(1,1,0)+z(0,-2,1)
+\]
+
+   e \(\dim W_{2}=2\).
+
+3. Risolvendo il sistema
+
+\[
+\begin{cases}
+x+2y-3z=0,\\
+-x+y+2z=0,
+\end{cases}
+\]
+
+   si ottiene \(z=3y\) e \(x=7y\), per cui
+
+\[
+(x,y,z)=y(7,1,3)
+\]
+
+   e \(\dim(W_{1}\cap W_{2})=1\).
+
+4. Per la formula di Grassmann
+
+\[
+\dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=2+2-1=3.
+\]
+
+   Quindi \(W_{1}+W_{2}=\mathbb{R}^{3}\).
+
+---
+
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
     **Breve descrizione:** Creato il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla.
 
     **Data:** 2025-08-09
     **Breve descrizione:** Aggiunto esercizio sulla somma di sottospazi.
+
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiunto esercizio sulla dimensione di \(W_{1}+W_{2}\).
 

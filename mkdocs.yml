@@ -26,7 +26,7 @@ theme:
 
 extra_css:
   - stylesheets/custom.css
-
+  - css/print.css
 markdown_extensions:
   - admonition
   - codehilite
@@ -40,7 +40,11 @@ markdown_extensions:
   - pymdownx.details
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.j
+  - https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js
+  - js/download.js
+
+  
 
 nav:
   - "🏠 Home": index.md

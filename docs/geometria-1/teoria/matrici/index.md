@@ -6,6 +6,7 @@ Benvenuto nell'hub dedicato alle **matrici**. Studieremo la loro struttura e il 
 
 - [Definizioni e Operazioni](definizioni.md)
 - [Equazioni Lineari](equazioni-lineari.md)
+- [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md)
 
 ## Esempi
 

@@ -24,3 +24,5 @@ Se $m=n$ e le colonne di $A$ sono [linearmente indipendenti](../spazi-vettoriali
 
 !!! tip "Axio"
     Ogni sistema lineare è un enigma: cerca la chiave nascosta nelle sue colonne!
+
+Per la riduzione di Gauss e il concetto di rango, consulta [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md).

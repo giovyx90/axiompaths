@@ -69,6 +69,7 @@ nav:
               - Introduzione: geometria-1/teoria/matrici/index.md
               - Definizioni e Operazioni: geometria-1/teoria/matrici/definizioni.md
               - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
+              - Rango e Riduzione di Gauss: geometria-1/teoria/matrici/rango-e-riduzione-di-gauss.md
           - Applicazioni Lineari:
               - Introduzione: geometria-1/teoria/applicazioni-lineari/index.md
           - Autovalori e Autovettori: geometria-1/teoria/autovalori-e-autovettori/index.md

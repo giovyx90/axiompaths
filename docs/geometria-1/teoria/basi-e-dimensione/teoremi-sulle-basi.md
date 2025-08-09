@@ -120,3 +120,10 @@ La dimensione cresce di uno a ogni passo e dopo al più $n-k$ iterazioni ottenia
 !!! tip "Axio"
     Cerchi un modo per allenarti? Prendi due vettori nello spazio delle matrici $2\times2$, completa l'insieme a una base e confronta il risultato con un amico!
 
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

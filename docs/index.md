@@ -57,3 +57,10 @@ Contenuti in arrivo ⏳
 
 !!! note "Axio consiglia"
     Ogni teorema è una tappa verso l'obiettivo. Continua a esplorare!
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

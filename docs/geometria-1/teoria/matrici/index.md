@@ -39,3 +39,10 @@ A + B = \begin{pmatrix}
 
 !!! tip "Axio"
     Le matrici sono come mappe: con la giusta chiave, trovi sempre la strada!
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

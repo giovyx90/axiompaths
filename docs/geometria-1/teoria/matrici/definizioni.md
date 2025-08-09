@@ -32,3 +32,10 @@ Queste operazioni rendono $M_{m,n}(\mathbb{K})$ uno [spazio vettoriale](../spazi
 
 !!! tip "Axio"
     Riconoscere il tipo di matrice è il primo passo per usarla al meglio!
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

@@ -280,3 +280,10 @@ w\in W_1\setminus W_2,\qquad u\in W_2\setminus W_1.
 
 6. Entrambi i casi sono impossibili: l’assunzione iniziale è falsa.  
    Dunque necessariamente $W_1\subseteq W_2$ **oppure** $W_2\subseteq W_1$. 
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

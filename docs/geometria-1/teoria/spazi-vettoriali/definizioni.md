@@ -81,3 +81,10 @@ A+B=(a_1+b_1,\dots,a_n+b_n), \qquad cA=(ca_1,\dots,ca_n).
 \]
 
 Il vettore nullo è $(0,\dots,0)$.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

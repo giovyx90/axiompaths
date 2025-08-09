@@ -11,3 +11,10 @@ le loro proprietà e gli esempi più utili.
 
 !!! tip "Axio"
     Ricorda: comprendere le regole fondamentali ti aiuta a maneggiare i vettori con sicurezza.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

@@ -8,3 +8,10 @@ Esercizi che richiedono tempo e pazienza.
 
 !!! tip "Axio"
     Prenditi il tempo necessario: ogni passo conta.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

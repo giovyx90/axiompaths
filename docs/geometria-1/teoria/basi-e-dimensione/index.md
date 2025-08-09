@@ -10,3 +10,10 @@ Questo hub è dedicato a basi, coordinate e dimensione degli spazi vettoriali.
 
 !!! tip "Axio"
     Una buona base trasforma problemi complicati in calcoli semplici!
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

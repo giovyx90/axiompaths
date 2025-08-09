@@ -95,3 +95,10 @@ $f(x,y)=(x+2y,3x+y)$.
 Base $B$ in dominio, $C$ in codominio.
 Calcolo $[f]_B^C = P_C^{-1} \cdot M_f \cdot P_B$, con $M_f$ rispetto alle basi canoniche.
 Risultato: $\begin{pmatrix}3 & 1 \\ 2 & 1 \end{pmatrix}$.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

@@ -231,3 +231,10 @@ hanno soluzione \(\lambda=y\), \(\mu=x-y\). Sostituendo nell'ultima equazione si
 
 ---
 
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

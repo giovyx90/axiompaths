@@ -20,3 +20,10 @@ per ogni \(v, w \in V\) e \(\lambda \in \mathbb{R}\).
 
 !!! tip "Axio"
     Ogni applicazione lineare ha una storia: scopri come parte dal nucleo e arriva all'immagine!
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

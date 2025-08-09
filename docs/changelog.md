@@ -70,7 +70,8 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Scorporata la pagina delle applicazioni generali e creata hub dedicata
 - 2025-08-09: Creato hub per gli esami calcolosi
 - 2025-08-09: Rimossi gli indent dei blocchi formula per il corretto rendering LaTeX
+- 2025-08-09: Eliminati blocchi di codice nelle pagine su moltiplicazione di matrici e spazi vettoriali
 ---
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
-    **Breve descrizione:** Aggiornata con la rimozione degli indent nelle formule in blocco.
+    **Breve descrizione:** Annotata la rimozione dei blocchi di codice e la sistemazione delle formule.

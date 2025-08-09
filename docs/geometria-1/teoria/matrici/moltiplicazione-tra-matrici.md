@@ -40,7 +40,7 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
     Ogni elemento \(c_{ij}\) è il **prodotto scalare** tra la riga \(i\) di \(A\) e la colonna \(j\) di \(B\):
 
 \[
-    c_{ij} = \langle \text{riga}_i(A), \, \text{colonna}_j(B) \rangle
+c_{ij} = \langle \text{riga}_i(A), \, \text{colonna}_j(B) \rangle
 \]
 
     Tuttavia, la moltiplicazione di matrici **nel suo insieme** non è un unico prodotto scalare, ma un insieme organizzato di tanti prodotti scalari.
@@ -51,7 +51,7 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
     Se \(A\) è una matrice \(m \times n\) e vale
 
 \[
-    A X = 0 \quad \forall\, X \in \mathbb{K}^n
+A X = 0 \quad \forall\, X \in \mathbb{K}^n
 \]
 
     allora \(A = 0\).
@@ -61,7 +61,7 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
     Il caso duale: se
 
 \[
-    Y^\top A = 0 \quad \forall\, Y \in \mathbb{K}^m
+Y^\top A = 0 \quad \forall\, Y \in \mathbb{K}^m
 \]
 
     allora \(A\) è nulla (tutte le righe nulle).
@@ -72,23 +72,23 @@ per ogni \( i = 1, \dots, m \) e \( j = 1, \dots, p \).
     Nella moltiplicazione di matrici non vale:
 
 \[
-    A \cdot B = 0 \ \Rightarrow\ A=0 \ \text{o}\ B=0
+A \cdot B = 0 \ \Rightarrow\ A=0 \ \text{o}\ B=0
 \]
 
     Esempio:
 
 \[
-    A =
-    \begin{pmatrix}
-    1 & -1 \\
-    1 & -1
-    \end{pmatrix},
-    \quad
-    B =
-    \begin{pmatrix}
-    1 & 1 \\
-    1 & 1
-    \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & -1 \\
+1 & -1
+\end{pmatrix},
+\quad
+B =
+\begin{pmatrix}
+1 & 1 \\
+1 & 1
+\end{pmatrix}
 \]
 
     entrambi non nulli, ma \(A \cdot B = 0\).
@@ -120,10 +120,10 @@ Calcolo:
 
 \[
 \begin{aligned}
- c_{11} &= 2\cdot 1 + 1\cdot 0 + 0\cdot 2 = 2 \\
- c_{12} &= 2\cdot 4 + 1\cdot (-1) + 0\cdot 3 = 7 \\
- c_{21} &= (-1)\cdot 1 + 3\cdot 0 + 2\cdot 2 = 3 \\
- c_{22} &= (-1)\cdot 4 + 3\cdot (-1) + 2\cdot 3 = -1
+c_{11} &= 2\cdot 1 + 1\cdot 0 + 0\cdot 2 = 2 \\
+c_{12} &= 2\cdot 4 + 1\cdot (-1) + 0\cdot 3 = 7 \\
+c_{21} &= (-1)\cdot 1 + 3\cdot 0 + 2\cdot 2 = 3 \\
+c_{22} &= (-1)\cdot 4 + 3\cdot (-1) + 2\cdot 3 = -1
 \end{aligned}
 \]
 
@@ -194,5 +194,5 @@ A \cdot A^{-1} =
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
-    **Breve descrizione:** Rimossi gli indent dei blocchi formula per il corretto rendering.
+    **Breve descrizione:** Eliminati i blocchi di codice e sistemata la formattazione delle formule.
 

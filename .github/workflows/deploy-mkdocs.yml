@@ -42,4 +42,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/giovyx90/axiompaths.git
 
       - name: Deploy to GitHub Pages (keep CNAME)
-        run: mkdocs gh-deploy --force --cname axiompaths.org
+        run: mkdocs gh-deploy --force

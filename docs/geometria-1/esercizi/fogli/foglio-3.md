@@ -39,13 +39,58 @@ a_{11}+a_{22}+\cdots+a_{nn}=0.
 
 5. Una base esplicita di \(W\) è data da tutte le \(E_{ij}\) con \(i\neq j\) insieme alle \(n-1\) matrici diagonali
 
-\[
+\[ 
 E_{11}-E_{nn},\;E_{22}-E_{nn},\;\dots,\;E_{n-1,n-1}-E_{nn}.
 \]
 
 ---
 
+## Esercizio 2
+Nel vettoriale spazio \(\mathbb{R}^{3}\) siano
+
+\[
+v=\begin{pmatrix}1\\0\\1\end{pmatrix},\qquad
+w_{1}=\begin{pmatrix}3\\1\\-1\end{pmatrix},\qquad
+w_{2}=\begin{pmatrix}5\\2\\-3\end{pmatrix}.
+\]
+
+Siano \(W_{1}=L(v)\) e \(W_{2}=L(w_{1},w_{2})\). Calcolare:
+
+1. \(\dim W_{1}\) e \(\dim W_{2}\);
+2. \(\dim (W_{1}\cap W_{2})\);
+3. \(\dim (W_{1}+W_{2})\).
+
+**Soluzione**
+
+!!! tip "Axio ti domanda"
+    Riesci a stabilire subito se \(v\) appartiene a \(W_{2}\)?
+
+1. Poiché \(v\neq 0\), \(\dim W_{1}=1\). I vettori \(w_{1},w_{2}\) sono L.I. perché l'unica soluzione di \(a w_{1}+b w_{2}=0\) è \(a=b=0\); quindi \(\dim W_{2}=2\).
+
+2. Cerchiamo \(c,a,b\in\mathbb{R}\) tali che \(c v = a w_{1}+b w_{2}\):
+
+\[
+\begin{cases}
+3a+5b=c,\\
+a+2b=0,\\
+-\,a-3b=c.
+\end{cases}
+\]
+
+Dalla seconda equazione otteniamo \(a=-2b\) e sostituendo ricaviamo \(c=-b\). Non essendo l'unica soluzione quella banale, \(W_{1}\cap W_{2}\) ha dimensione \(1\). In particolare \(v=2w_{1}-w_{2}\), quindi \(W_{1}\subseteq W_{2}\).
+
+3. Poiché \(W_{1}\subseteq W_{2}\), si ha \(W_{1}+W_{2}=W_{2}\) e \(\dim(W_{1}+W_{2})=2\). Equivalentemente, per la [formula di Grassmann](../../teoria/basi-e-dimensione/teorema-di-grassmann.md):
+
+\[
+\dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=1+2-1=2.
+\]
+
+---
+
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
+    **Data:** 2025-08-09
     **Breve descrizione:** Creato il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla.
+
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiunto esercizio sulla somma di sottospazi.
 

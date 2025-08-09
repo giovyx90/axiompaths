@@ -72,7 +72,11 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Rimossi gli indent dei blocchi formula per il corretto rendering LaTeX
 - 2025-08-09: Eliminati blocchi di codice nelle pagine su moltiplicazione di matrici e spazi vettoriali
 - 2025-08-09: Aggiunto il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla
+- 2025-08-09: Aggiunto esercizio sulla somma di sottospazi nel foglio 3
 ---
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
     **Breve descrizione:** Annotata la rimozione dei blocchi di codice e la sistemazione delle formule.
+
+    **Data:** 2025-08-09
+    **Breve descrizione:** Registrata l'aggiunta dell'esercizio sulla somma di sottospazi.

@@ -1,6 +1,16 @@
 # Applicazioni Lineari
 
-Le **applicazioni lineari** sono funzioni tra spazi vettoriali che preservano le combinazioni lineari. Attraverso di esse possiamo modellare trasformazioni geometriche e risolvere problemi di algebra lineare. Ogni applicazione può essere rappresentata da una [matrice](../matrici/index.md) una volta fissate basi adatte.
+Le **applicazioni lineari** sono funzioni tra [spazi vettoriali](../spazi-vettoriali/index.md) che preservano le combinazioni lineari. Ogni trasformazione può essere rappresentata da una [matrice](../matrici/index.md) una volta fissate basi adatte.
+
+## Definizione
+
+Un'applicazione \(T: V \to W\) è lineare se soddisfa
+
+\[
+T(v + w) = T(v) + T(w), \qquad T(\lambda v) = \lambda T(v)
+\]
+
+per ogni \(v, w \in V\) e \(\lambda \in \mathbb{R}\).
 
 ## Contenuti
 

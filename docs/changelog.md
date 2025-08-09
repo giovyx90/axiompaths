@@ -64,8 +64,10 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Aggiornata rango-e-riduzione-di-gauss.md
 - 2025-08-09: Aggiunte soluzioni settimanali Axio Quest e rotazione
 
+- 2025-08-09: Aggiunta pagina sulla moltiplicazione tra matrici e aggiornato l'hub
+
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
-    **Breve descrizione:** Creazione del registro delle modifiche.
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiornata con la moltiplicazione tra matrici.

@@ -83,19 +83,40 @@ X=X_0+Y, \qquad Y\in\ker A.
 
 ### Dimostrazione
 
-Se il sistema è risolubile esiste $X_0$ tale che $AX_0=b$. Il vettore $b$ è quindi combinazione lineare delle colonne di $A$ e l'aggiunta della colonna $b$ non aumenta il rango: $\operatorname{rk}_r(\widetilde{A})=\operatorname{rk}_r(A)$.
+1. **Riduzione a scala**  
+   Applichiamo operazioni elementari sulle righe sia ad $A$ che a $\widetilde{A}=(A\mid b)$. Poiché queste operazioni preservano il rango, possiamo assumere entrambe in forma a scala ridotta.
 
-Viceversa, supponiamo $\operatorname{rk}_r(\widetilde{A})=\operatorname{rk}_r(A)=r$. Riducendo $\widetilde{A}$ a scala si ottiene
+2. **Caso compatibile ⇒ ranghi uguali**  
+   Se il sistema è compatibile, non compare alcuna riga del tipo
+
+   \[
+   (0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0
+   \]
+
+   Questo implica che $b$ è combinazione lineare delle colonne di $A$ e la colonna aggiunta non aumenta il rango:
+
+   \[
+   \operatorname{rk}_r(\widetilde{A})=\operatorname{rk}_r(A).
+   \]
+
+3. **Caso ranghi uguali ⇒ compatibile**  
+   Se i ranghi coincidono, la colonna $b$ è combinazione lineare delle colonne di $A$. Esiste quindi $X$ tale che $AX=b$, e il sistema è risolubile.
+
+4. **Caso ranghi diversi ⇒ incompatibile**  
+   Se $\operatorname{rk}_r(\widetilde{A})>\operatorname{rk}_r(A)$, comparirà una riga
+
+   \[
+   (0\ \dots\ 0 \mid c) \quad \text{con } c \neq 0,
+   \]
+
+   che rappresenta l'equazione impossibile $0=c$. Il sistema è quindi incompatibile.
+
+**Conclusione**  
+Il sistema $AX=b$ è compatibile se e solo se i ranghi coincidono:
 
 \[
-\left(
-\begin{array}{ccc|c}
-\color{red}{1} & * & \dots & * \\
-0 & \color{red}{1} & \dots & * \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \dots & 0
-\end{array}
-\right)
+\operatorname{rk}_r(A)=\operatorname{rk}_r(\widetilde{A}).
 \]
 
-dove non compaiono righe del tipo $0\ \dots\ 0\mid 1$. L'assenza di tali righe implica che il sistema è compatibile e si possono determinare le variabili corrispondenti ai pivot in funzione delle variabili libere, ottenendo una soluzione $X_0$. Ogni altra soluzione è $X_0+Y$ con $Y\in\ker A$.
+!!! tip "Axio"
+    Se i ranghi sono uguali, puoi cercare le soluzioni! Altrimenti, Axio ti ricorda che qualcosa non torna.

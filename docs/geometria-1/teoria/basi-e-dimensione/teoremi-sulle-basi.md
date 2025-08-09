@@ -21,9 +21,9 @@ allora $\{v_1,\dots,v_r\}$ è una base di $V$.
 
 Poiché l'insieme è massimale e indipendente, per ogni $j>r$ l'insieme $\{v_1,\dots,v_r,v_j\}$ è dipendente. Esistono quindi coefficienti $\alpha_i$ tali che
 
-\[
+$$
 v_j = \sum_{i=1}^r \alpha_i v_i.
-\]
+$$
 
 Ogni $v_j$ con $j>r$ appartiene allo span dei primi $r$ vettori. Siccome $\{v_1,\dots,v_n\}$ genera $V$, ogni vettore $v\in V$ è combinazione lineare dei $v_j$ e dunque dei soli $v_1,\dots,v_r$. L'insieme $\{v_1,\dots,v_r\}$ genera quindi $V$ ed è una base.
 
@@ -34,7 +34,23 @@ definire la **dimensione** di $V$ come il numero di vettori di una qualunque bas
 
 **Dimostrazione.**
 
-Siano $B$ e $C$ due basi di $V$. L'insieme $B$ è indipendente e $C$ genera $V$, quindi la massimalità di $B$ implica $|B|\leq|C|$. Scambiando i ruoli, otteniamo anche $|C|\leq|B|$ e concludiamo $|B|=|C|$.
+Siano $B$ e $C$ due basi di $V$. L'insieme $B$ è indipendente e $C$ genera $V$, quindi la massimalità di $B$ implica
+
+$$
+\lvert B \rvert \leq \lvert C \rvert.
+$$
+
+Scambiando i ruoli, otteniamo anche
+
+$$
+\lvert C \rvert \leq \lvert B \rvert,
+$$
+
+e concludiamo
+
+$$
+\lvert B \rvert = \lvert C \rvert.
+$$
 
 ### Dipendenza in spazi finiti
 
@@ -48,9 +64,9 @@ $w_i$ sono dipendenti.
 Data una base $B=\{b_1,\dots,b_n\}$ e un vettore $v\notin \operatorname{Span}(B)$,
 l'insieme $B\cup\{v\}$ è dipendente. Esiste $b_j\in B$ tale che
 
-\[
+$$
 (B\setminus\{b_j\})\cup\{v\}
-\]
+$$
 
 è ancora una base di $V$.
 
@@ -58,14 +74,14 @@ l'insieme $B\cup\{v\}$ è dipendente. Esiste $b_j\in B$ tale che
 
 Essendo $B\cup\{v\}$ dipendente, esistono coefficienti non tutti nulli tali che
 
-\[
+$$
 \alpha v + \sum_{i=1}^n \beta_i b_i = 0.
-\]
+$$
 
 Il coefficiente $\alpha$ non può essere nullo, altrimenti avremmo una relazione tra i soli $b_i$. Isolando $v$ otteniamo
 
-\[
+$$
 v = -\frac{1}{\alpha}\sum_{i=1}^n \beta_i b_i.
-\]
+$$
 
 Almeno un $\beta_j$ è non nullo; sostituendo $b_j$ con $v$ otteniamo un insieme di $n$ vettori che genera $V$ e rimane indipendente, quindi è una base.

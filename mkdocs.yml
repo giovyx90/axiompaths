@@ -74,8 +74,10 @@ nav:
               - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
               - Rango e Riduzione di Gauss: geometria-1/teoria/matrici/rango-e-riduzione-di-gauss.md
           - Applicazioni:
-              - Introduzione: geometria-1/teoria/applicazioni-lineari/index.md
-              - Definizione e Proprietà: geometria-1/teoria/applicazioni-lineari/definizione-e-proprieta.md
+              - Introduzione: geometria-1/teoria/applicazioni/index.md
+              - Applicazioni Lineari:
+                  - Introduzione: geometria-1/teoria/applicazioni-lineari/index.md
+                  - Definizione e Proprietà: geometria-1/teoria/applicazioni-lineari/definizione-e-proprieta.md
           - Autovalori e Autovettori: geometria-1/teoria/autovalori-e-autovettori/index.md
           - Forme Canoniche e Jordan: geometria-1/teoria/forme-canoniche-e-jordan/index.md
           - Duali e Forme Bilineari: geometria-1/teoria/duali-e-forme-bilineari/index.md

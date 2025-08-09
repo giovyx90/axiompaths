@@ -67,6 +67,8 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Aggiunta pagina sulla moltiplicazione tra matrici e aggiornato l'hub
 - 2025-08-09: Inserita introduzione generale alle applicazioni e aggiornata la navigazione
 - 2025-08-09: Rimossa autoreferenzialità nella pagina delle applicazioni
+- 2025-08-09: Scorporata la pagina delle applicazioni generali e creata hub dedicata
+- 2025-08-09: Creato hub per gli esami calcolosi
 ---
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09

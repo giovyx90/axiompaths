@@ -35,6 +35,7 @@ Contenuti in arrivo ⏳
    - [Spazi Vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
    - [Basi e Dimensione](geometria-1/teoria/basi-e-dimensione/index.md)
    - [Matrici](geometria-1/teoria/matrici/index.md)
+   - [Applicazioni](geometria-1/teoria/applicazioni/index.md)
    - [Applicazioni Lineari](geometria-1/teoria/applicazioni-lineari/index.md)
    - [Autovalori e Autovettori](geometria-1/teoria/autovalori-e-autovettori/index.md)
    - [Forme Canoniche e Jordan](geometria-1/teoria/forme-canoniche-e-jordan/index.md)
@@ -61,6 +62,6 @@ Contenuti in arrivo ⏳
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
-    **Breve descrizione:** Inizio tracciamento delle modifiche.
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiunta pagina sulle applicazioni generali e hub esami calcolosi.
 

@@ -74,6 +74,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Aggiunto il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla
 - 2025-08-09: Aggiunto esercizio sulla somma di sottospazi nel foglio 3
 - 2025-08-09: Aggiunto esercizio sulla dimensione di \(W_{1}+W_{2}\) nel foglio 3
+- 2025-08-09: Inserito esercizio sulla somma di due sottospazi in \(\mathbb{R}^{4}\) nel foglio 3
 ---
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
@@ -84,3 +85,6 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 
     **Data:** 2025-08-09
     **Breve descrizione:** Registrata l'aggiunta dell'esercizio sulla dimensione di \(W_{1}+W_{2}\).
+
+    **Data:** 2025-08-09
+    **Breve descrizione:** Registrata l'aggiunta dell'esercizio sulla somma di due sottospazi in \(\mathbb{R}^{4}\).

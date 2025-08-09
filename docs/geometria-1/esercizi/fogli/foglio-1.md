@@ -86,9 +86,11 @@ Dedurre dall'esercizio 2 che se \(t \cdot v = O\), allora \(t = 0\) oppure \(v =
 
 ## Esercizio 4
 Sia \(\mathcal{P}\) lo spazio dei polinomi reali e
+
 \[
 W=\{p\in\mathcal{P}: p(1)=p(2)=0\}.
 \]
+
 **Tesi.** \(W\) è un sottospazio vettoriale di \(\mathcal{P}\).
 
 **Dimostrazione**
@@ -119,17 +121,19 @@ Per quali \(p\in\mathcal{P}\) il grafico \(\Gamma=\{(x,p(x)) : x\in\mathbb{R}\}\
 
 1. **Origine.** Se \(\Gamma\) è s.s.v., allora \((0,0)\in\Gamma\), quindi \(p(0)=0\).   (Un s.s.v. contiene il vettore nullo.)
 
-2. **Somma.** Se \((x_1,p(x_1))\) e \((x_2,p(x_2))\) sono in \(\Gamma\), la loro somma  
-   \((x_1+x_2,\; p(x_1)+p(x_2))\) deve stare in \(\Gamma\).  
-   Quindi **per ogni** \(x_1,x_2\):  
+2. **Somma.** Se \((x_1,p(x_1))\) e \((x_2,p(x_2))\) sono in \(\Gamma\), la loro somma
+   \((x_1+x_2,\; p(x_1)+p(x_2))\) deve stare in \(\Gamma\).
+   Quindi **per ogni** \(x_1,x_2\):
+   
    \[
    p(x_1+x_2)=p(x_1)+p(x_2).
-   \]  
+   \]
 
-3. **Scalari.** Per ogni \(\lambda\in\mathbb{R}\), \(\lambda(x,p(x))=(\lambda x,\lambda p(x))\in\Gamma\) implica  
+3. **Scalari.** Per ogni \(\lambda\in\mathbb{R}\), \(\lambda(x,p(x))=(\lambda x,\lambda p(x))\in\Gamma\) implica
+   
    \[
    p(\lambda x)=\lambda\,p(x)\quad\text{per ogni }x,\lambda.
-   \]  
+   \]
 
 4. **Conclusione.** Un polinomio che è additivo e omogeneo di grado 1 è necessariamente lineare **senza termine noto**: \(p(x)=ax\).  
    Polinomi di grado \(\ge 2\) violano l’additività (es. \(x^2\): \(1^2+3^2\neq (1+3)^2\)).  
@@ -138,30 +142,37 @@ Per quali \(p\in\mathcal{P}\) il grafico \(\Gamma=\{(x,p(x)) : x\in\mathbb{R}\}\
 
 ## Esercizio 6
 In $M_{2,2}(\mathbb{R})$ si consideri
+
 \[
 W=\{A\in M_{2,2}(\mathbb{R}) : A=-A^{T}\}.
 \]
+
 **Tesi.** $W$ è un sottospazio di $M_{2,2}(\mathbb{R})$.
 
 **Dimostrazione**
 
-1. **Forma generale.** Se $A=-A^T$ con $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$, allora dai coefficienti diagonali $a=-a$ e $d=-d$ segue $a=d=0$. Inoltre $c=-b$.  
+1. **Forma generale.** Se $A=-A^T$ con $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$, allora dai coefficienti diagonali $a=-a$ e $d=-d$ segue $a=d=0$. Inoltre $c=-b$.
    Quindi ogni $A\in W$ è del tipo
+
    \[
    A=\begin{pmatrix}0&b\\ -b&0\end{pmatrix},\quad b\in\mathbb{R}.
    \]
 
-2. **Chiusura per somma.** Siano $A_1,A_2\in W$. Allora $A_1=-A_1^T$ e $A_2=-A_2^T$.  
+2. **Chiusura per somma.** Siano $A_1,A_2\in W$. Allora $A_1=-A_1^T$ e $A_2=-A_2^T$.
+
    \[
    (A_1+A_2)^T=A_1^T+A_2^T=-(A_1+A_2).
    \]
-   Quindi $A_1+A_2\in W$.  
+
+   Quindi $A_1+A_2\in W$.
 
 3. **Chiusura per scalare.** Per $\lambda\in\mathbb{R}$ e $A\in W$:
+
    \[
    (\lambda A)^T=\lambda A^T=\lambda(-A)=-(\lambda A),
    \]
-   dunque $\lambda A\in W$.  
+
+   dunque $\lambda A\in W$.
 
 4. **Zero in $W$.** La matrice nulla $0$ verifica $0=-0^T$.   (Trasposta di zero è zero.)
 
@@ -171,9 +182,11 @@ W=\{A\in M_{2,2}(\mathbb{R}) : A=-A^{T}\}.
 
 ## Esercizio 7
 In $\mathbb{R}^3$:
+
 \[
 W=\{(x,y,z)\in\mathbb{R}^3: x+y+z=0\},\qquad U_k=L\big((1,k,2)\big).
 \]
+
 Determinare $k\in\mathbb{R}$ per cui $W\cup U_k$ è un s.s.v.
 
 **Soluzione**
@@ -186,6 +199,7 @@ Determinare $k\in\mathbb{R}$ per cui $W\cup U_k$ è un s.s.v.
    Poiché $\dim U_k=1<2=\dim W$, l’unico caso possibile è $U_k\subseteq W$.  
 
 4. Condizione di inclusione: il generatore $(1,k,2)$ deve soddisfare l’equazione di $W$:
+   
    \[
    1+k+2=0\ \Longrightarrow\ k=-3.
    \]
@@ -197,6 +211,7 @@ Determinare $k\in\mathbb{R}$ per cui $W\cup U_k$ è un s.s.v.
 
 ## Esercizio 8
 Per $v_1,v_2\in V$, provare che
+
 \[
 L(v_1,v_2)=L(v_1)+L(v_2).
 \]
@@ -216,6 +231,7 @@ L(v_1,v_2)=L(v_1)+L(v_2).
 
 ## Esercizio 9
 Sia $V$ uno spazio vettoriale. Se $v_1,v_2\in L(w_1,\dots,w_n)$, provare che
+
 \[
 L(v_1,v_2)\subseteq L(w_1,\dots,w_n).
 \]
@@ -223,11 +239,13 @@ L(v_1,v_2)\subseteq L(w_1,\dots,w_n).
 **Dimostrazione**
 
 1. Poiché $v_1,v_2\in L(w_1,\dots,w_n)$, esistono coefficienti $(\alpha_i),(\beta_i)$ tali che
+   
    \[
    v_1=\sum_{i=1}^n \alpha_i w_i,\qquad v_2=\sum_{i=1}^n \beta_i w_i.
    \]
 
 2. Sia $x\in L(v_1,v_2)$. Allora $x=a v_1+b v_2$ per qualche $a,b\in\mathbb{R}$. Sostituendo:
+   
    \[
    x=a\sum_{i=1}^n \alpha_i w_i+b\sum_{i=1}^n \beta_i w_i
     =\sum_{i=1}^n (a\alpha_i+b\beta_i)\,w_i \in L(w_1,\dots,w_n).
@@ -239,6 +257,7 @@ L(v_1,v_2)\subseteq L(w_1,\dots,w_n).
 
 ## Esercizio 10*
 Siano $W_1,W_2\subseteq V$ s.s.v. Se $W_1\cup W_2$ è un s.s.v., mostrare che
+
 \[
 W_1\subseteq W_2\quad\text{oppure}\quad W_2\subseteq W_1.
 \]
@@ -248,6 +267,7 @@ W_1\subseteq W_2\quad\text{oppure}\quad W_2\subseteq W_1.
 1. Supponiamo **non** valga nessuna inclusione: $W_1\nsubseteq W_2$ e $W_2\nsubseteq W_1$.   (Negazione della tesi.)
 
 2. Esistono allora
+
    \[
    w\in W_1\setminus W_2,\qquad u\in W_2\setminus W_1.
    \]

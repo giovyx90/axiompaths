@@ -23,19 +23,20 @@ Contenuti in arrivo ⏳
 
 ### 📐 Geometria 1
 
-- **Teoria**
-  - [Spazi Vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
-  - [Basi e Dimensione](geometria-1/teoria/basi-e-dimensione/index.md)
-  - [Applicazioni Lineari e Matrici](geometria-1/teoria/applicazioni-lineari-e-matrici/index.md)
-  - [Autovalori e Autovettori](geometria-1/teoria/autovalori-e-autovettori/index.md)
-  - [Forme Canoniche e Jordan](geometria-1/teoria/forme-canoniche-e-jordan/index.md)
-  - [Duali e Forme Bilineari](geometria-1/teoria/duali-e-forme-bilineari/index.md)
-  - [Prodotto Scalare e Ortonormalità](geometria-1/teoria/prodotto-scalare-e-ortonormalita/index.md)
-  - [Teoremi Classici della Geometria Proiettiva](geometria-1/teoria/teoremi-classici-geometria-proiettiva/index.md)
+ - **Teoria**
+   - [Spazi Vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
+   - [Basi e Dimensione](geometria-1/teoria/basi-e-dimensione/index.md)
+   - [Matrici](geometria-1/teoria/matrici/index.md)
+   - [Applicazioni Lineari](geometria-1/teoria/applicazioni-lineari/index.md)
+   - [Autovalori e Autovettori](geometria-1/teoria/autovalori-e-autovettori/index.md)
+   - [Forme Canoniche e Jordan](geometria-1/teoria/forme-canoniche-e-jordan/index.md)
+   - [Duali e Forme Bilineari](geometria-1/teoria/duali-e-forme-bilineari/index.md)
+   - [Prodotto Scalare e Ortonormalità](geometria-1/teoria/prodotto-scalare-e-ortonormalita/index.md)
+   - [Teoremi Classici della Geometria Proiettiva](geometria-1/teoria/teoremi-classici-geometria-proiettiva/index.md)
 
-- **Esercizi**
-  - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
-  - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
+ - **Esercizi**
+   - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
+   - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
 
 - **Esami**
   - [Calcoloso](geometria-1/esami/calcoloso/index.md)

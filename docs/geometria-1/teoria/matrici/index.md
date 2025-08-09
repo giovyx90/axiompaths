@@ -5,6 +5,7 @@ Benvenuto nell'hub dedicato alle **matrici**. Studieremo la loro struttura e il 
 ## Contenuti
 
 - [Definizioni e Operazioni](definizioni.md)
+- [Moltiplicazione tra Matrici](moltiplicazione-tra-matrici.md)
 - [Equazioni Lineari](equazioni-lineari.md)
 - [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md)
 
@@ -44,5 +45,5 @@ A + B = \begin{pmatrix}
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09  
-    **Breve descrizione:** Inizio tracciamento delle modifiche.
+    **Breve descrizione:** Aggiunta sezione sulla moltiplicazione tra matrici.
 

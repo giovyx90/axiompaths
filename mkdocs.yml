@@ -64,6 +64,7 @@ nav:
               - Introduzione: geometria-1/teoria/basi-e-dimensione/index.md
               - Basi: geometria-1/teoria/basi-e-dimensione/basi.md
               - Teoremi sulle Basi: geometria-1/teoria/basi-e-dimensione/teoremi-sulle-basi.md
+              - Teorema di Grassmann: geometria-1/teoria/basi-e-dimensione/teorema-di-grassmann.md
           - Matrici:
               - Introduzione: geometria-1/teoria/matrici/index.md
               - Definizioni e Operazioni: geometria-1/teoria/matrici/definizioni.md

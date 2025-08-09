@@ -71,6 +71,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Creato hub per gli esami calcolosi
 - 2025-08-09: Rimossi gli indent dei blocchi formula per il corretto rendering LaTeX
 - 2025-08-09: Eliminati blocchi di codice nelle pagine su moltiplicazione di matrici e spazi vettoriali
+- 2025-08-09: Aggiunto il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla
 ---
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09

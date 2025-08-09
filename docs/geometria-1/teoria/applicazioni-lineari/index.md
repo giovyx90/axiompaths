@@ -14,7 +14,7 @@ per ogni \(v, w \in V\) e \(\lambda \in \mathbb{R}\).
 
 ## Contenuti
 
-- Definizione e proprietà di base _(in arrivo)_
+- [Definizione e proprietà di base](definizione-e-proprieta.md)
 - Nucleo e immagine _(in arrivo)_
 - Isomorfismi e rappresentazioni matriciali _(in arrivo)_
 
@@ -24,6 +24,6 @@ per ogni \(v, w \in V\) e \(\lambda \in \mathbb{R}\).
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
-    **Breve descrizione:** Inizio tracciamento delle modifiche.
+    **Data:** 2025-08-09
+    **Breve descrizione:** Aggiunta la pagina su definizione e proprietà.
 

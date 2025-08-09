@@ -65,6 +65,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Aggiunte soluzioni settimanali Axio Quest e rotazione
 
 - 2025-08-09: Aggiunta pagina sulla moltiplicazione tra matrici e aggiornato l'hub
+- 2025-08-09: Introdotte definizione e proprietà delle applicazioni lineari e aggiornata la navigazione
 
 ---
 

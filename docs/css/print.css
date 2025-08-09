@@ -1,0 +1,3 @@
+/* Evita tagli strani e migliora resa */
+article.md-typeset { background: #fff; }
+.page-break { break-after: page; }

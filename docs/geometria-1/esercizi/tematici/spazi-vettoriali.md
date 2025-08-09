@@ -6,7 +6,7 @@ Breve raccolta di esercizi per consolidare le nozioni sugli spazi vettoriali.
     Sperimenta strategie diverse: ogni esercizio è un'opportunità per scoprire nuovi collegamenti.
 
 **Esercizio**
-Dimostra che le seguenti terne di vettori in $\mathbb{R}^4$ sono linearmente indipendenti:
+Dimostra che le seguenti terne di vettori in $\mathbb{R}^4$ sono [linearmente indipendenti](../../teoria/spazi-vettoriali/combinazioni-lineari.md):
 
 $$
 \left\{
@@ -56,7 +56,7 @@ $$
 
 *Prima terna.*
 
-Costruiamo la matrice $A$ con i vettori come colonne:
+Costruiamo la [matrice](../../teoria/matrici/definizioni.md) $A$ con i vettori come colonne:
 
 $$
 A = \begin{pmatrix}

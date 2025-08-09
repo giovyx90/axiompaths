@@ -20,7 +20,7 @@ Il sistema è **omogeneo** se $b_1=\dots=b_m=0$; possiede sempre la soluzione ba
 
 Se $n>m$, il sistema omogeneo ammette sempre una soluzione non banale, cioè esistono $x_i$ non tutti nulli tali che $Ax=0$.
 
-Se $m=n$ e le colonne di $A$ sono linearmente indipendenti, allora il sistema $Ax=b$ ha una soluzione unica.
+Se $m=n$ e le colonne di $A$ sono [linearmente indipendenti](../spazi-vettoriali/combinazioni-lineari.md), allora il sistema $Ax=b$ ha una soluzione unica.
 
 !!! tip "Axio"
     Ogni sistema lineare è un enigma: cerca la chiave nascosta nelle sue colonne!

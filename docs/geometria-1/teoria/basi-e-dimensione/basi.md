@@ -1,6 +1,6 @@
 # Basi
 
-Studiamo le basi degli spazi vettoriali e come ogni vettore si rappresenta in modo unico.
+Studiamo le basi degli [spazi vettoriali](../spazi-vettoriali/index.md) e come ogni vettore si rappresenta in modo unico.
 
 Un insieme ordinato di vettori di $V$ è una **base** se è linearmente indipendente
 e genera $V$.

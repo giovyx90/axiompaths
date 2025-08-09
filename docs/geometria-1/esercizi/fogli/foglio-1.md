@@ -4,11 +4,11 @@ Primo foglio di esercizi per mettere in pratica i concetti base dell'algebra lin
 
 ## Prerequisiti
 
-- Definizione di spazio vettoriale e sue proprietà.
-- Operazioni tra vettori: somma, opposto e prodotto per scalare.
-- Sottospazi vettoriali.
-- Combinazioni lineari, span e dipendenza lineare.
-- Conoscenza di polinomi reali e matrici \(2\times 2\).
+- [Definizione di spazio vettoriale e sue proprietà](../../teoria/spazi-vettoriali/definizioni.md).
+- [Operazioni tra vettori: somma, opposto e prodotto per scalare](../../teoria/spazi-vettoriali/definizioni.md).
+- [Sottospazi vettoriali](../../teoria/spazi-vettoriali/sottospazi.md).
+- [Combinazioni lineari, span e dipendenza lineare](../../teoria/spazi-vettoriali/combinazioni-lineari.md).
+- Conoscenza di polinomi reali e [matrici \(2\times 2\)](../../teoria/matrici/definizioni.md).
 
 !!! tip "Axio"
     Ripassa le definizioni con esempi concreti: ti renderà più sicuro negli esercizi!

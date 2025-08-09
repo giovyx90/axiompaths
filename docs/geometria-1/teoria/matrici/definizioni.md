@@ -20,7 +20,7 @@ Date due matrici $A,B \in M_{m,n}(\mathbb{K})$ possiamo sommarle componente a co
 
 Per ogni scalare $c\in\mathbb{K}$, la matrice $cA$ si ottiene moltiplicando tutte le entrate di $A$ per $c$.
 
-Queste operazioni rendono $M_{m,n}(\mathbb{K})$ uno spazio vettoriale.
+Queste operazioni rendono $M_{m,n}(\mathbb{K})$ uno [spazio vettoriale](../spazi-vettoriali/index.md).
 
 ## Tipi di Matrici
 

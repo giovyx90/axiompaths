@@ -43,3 +43,10 @@ Sottraendo le due relazioni:
 \]
 
 e quindi $a=0$.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

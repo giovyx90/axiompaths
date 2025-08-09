@@ -50,3 +50,10 @@ Contenuti teorici essenziali.
 
 Questo schema può essere adattato a qualsiasi argomento e incoraggia una lettura chiara e progressiva.
 
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

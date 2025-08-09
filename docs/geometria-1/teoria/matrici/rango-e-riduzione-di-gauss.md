@@ -129,3 +129,10 @@ Il sistema $AX=b$ è compatibile se e solo se i ranghi coincidono:
 
 !!! tip "Axio"
     Se i ranghi sono uguali, puoi cercare le soluzioni! Altrimenti, Axio ti ricorda che qualcosa non torna.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

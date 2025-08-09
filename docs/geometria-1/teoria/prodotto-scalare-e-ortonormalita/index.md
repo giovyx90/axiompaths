@@ -22,3 +22,10 @@ A\cdot B = a_1b_1 + \dots + a_nb_n.
 1. $A\cdot B = B\cdot A$.
 2. $A\cdot (B+C) = A\cdot B + A\cdot C$.
 3. $(xA)\cdot B = x(A\cdot B)$ per ogni $x\in\mathbb{K}$.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

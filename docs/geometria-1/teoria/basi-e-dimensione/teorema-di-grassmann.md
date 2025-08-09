@@ -49,3 +49,10 @@ La cardinalità di $\mathcal B$ è $m+n-r$ e coincide con $\dim(U+V)$. Sostituen
 
 !!! tip "Axio"
     Prova a verificare la formula con due sottospazi distinti del piano: quanto può valere l'intersezione?
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

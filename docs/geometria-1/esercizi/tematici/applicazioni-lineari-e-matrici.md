@@ -95,3 +95,10 @@ Per \(k=\tfrac{5}{2}\), scegliendo \(x_3=t\) otteniamo \(x_2=-3t\) e \(x_1=\tfra
 
 > **Axio chiede:** sapresti costruire una trasformazione lineare diversa che abbia lo stesso nucleo?
 
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

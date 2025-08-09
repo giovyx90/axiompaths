@@ -38,3 +38,10 @@ v = x_1v_1+\dots+x_nv_n.
 \]
 
 La $n$-upla $(x_1,\dots,x_n)$ sono le **coordinate** di $v$ rispetto alla base.
+
+---
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-09  
+    **Breve descrizione:** Inizio tracciamento delle modifiche.
+

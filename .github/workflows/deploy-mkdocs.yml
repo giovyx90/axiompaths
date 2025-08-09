@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main  # o il branch dove fai i merge
+      - main
 
 permissions:
   contents: write
@@ -11,30 +11,35 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-      # Step 1: Checkout del codice
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      # Step 2: Configura Python
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'  # Imposta la versione di Python
+          python-version: '3.11'
 
-      # Step 3: Installa le dipendenze
-      - name: Install MkDocs and Material theme
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install MkDocs + theme
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs  # Installa mkdocs
-          pip install mkdocs-material  # Installa il tema Material
-        
-      # Step 4: Configura l'autenticazione con GitHub
-      - name: Set up Git authentication
+          pip install mkdocs mkdocs-material
+
+      - name: Build (verify)
+        run: mkdocs build --strict
+
+      - name: Git identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/giovyx90/axiompaths.git
 
-      # Step 5: Pubblica su GitHub Pages
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force  # Pubblica su gh-pages
+      - name: Deploy to GitHub Pages (keep CNAME)
+        run: mkdocs gh-deploy --force --cname axiompaths.org

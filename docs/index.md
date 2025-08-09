@@ -13,6 +13,14 @@ Axio, la nostra mascotte, ti dà il benvenuto.
 Axiom Paths è un progetto open-source che raccoglie appunti ed esercizi di matematica.
 Il nostro viaggio non si ferma all'algebra lineare: nuove mete si aggiungeranno lungo il cammino.
 
+## 🎯 Quest della settimana
+
+<div id="weekly-quest">
+  Axio sta preparando la prossima sfida...
+</div>
+
+<script src="js/weekly-quest.js"></script>
+
 ---
 
 ## 🚀 Inizia il viaggio

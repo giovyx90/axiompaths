@@ -52,6 +52,7 @@ extra_javascript:
 nav:
   - "🏠 Home": index.md
   - "🛠️ Guida Pagine": guida-pagine.md
+  - "🧩 Axio Quest": quest/soluzioni-axio-quest.md
   - "📈 Analisi 1": analisi-1/index.md
   - "📐 Geometria 1":
       - "📚 Teoria":

@@ -68,7 +68,8 @@ nav:
               - Introduzione: geometria-1/teoria/matrici/index.md
               - Definizioni e Operazioni: geometria-1/teoria/matrici/definizioni.md
               - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
-          - Applicazioni Lineari: geometria-1/teoria/applicazioni-lineari/index.md
+          - Applicazioni Lineari:
+              - Introduzione: geometria-1/teoria/applicazioni-lineari/index.md
           - Autovalori e Autovettori: geometria-1/teoria/autovalori-e-autovettori/index.md
           - Forme Canoniche e Jordan: geometria-1/teoria/forme-canoniche-e-jordan/index.md
           - Duali e Forme Bilineari: geometria-1/teoria/duali-e-forme-bilineari/index.md

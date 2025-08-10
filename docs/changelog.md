@@ -1,4 +1,4 @@
-<!-- Changelog: corretta la data della sezione PDF degli esami di Geometria 1. -->
+<!-- Changelog: registrata la riorganizzazione della sezione PDF degli esami con categorie e soluzioni. -->
 
 # Registro delle modifiche
 
@@ -83,6 +83,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-10: Sistemata la formattazione della pagina sulla moltiplicazione tra matrici
 - 2025-08-10: Riorganizzate le hub di teoria e aggiunta una panoramica generale degli esami
 - 2025-08-10: Aggiunta sezione PDF degli esami di Geometria 1
+- 2025-08-10: Riorganizzata la sezione PDF degli esami con categorie e soluzioni
 
 ---
 
@@ -107,3 +108,6 @@ Le voci sono ordinate dalla più vecchia alla più recente.
     
     **Data:** 2025-08-10
     **Breve descrizione:** Registrata l'aggiunta della sezione PDF degli esami di Geometria 1.
+
+    **Data:** 2025-08-10
+    **Breve descrizione:** Registrata la riorganizzazione della sezione PDF degli esami con categorie e soluzioni.

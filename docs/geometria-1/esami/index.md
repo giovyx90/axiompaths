@@ -1,4 +1,4 @@
-<!-- Changelog: collegato l'indice alla navigazione principale. -->
+<!-- Changelog: collegato l'indice alla navigazione principale e aggiunta la sezione PDF. -->
 
 # Esami
 
@@ -11,6 +11,7 @@ La sezione **Esami** offre una panoramica dei diversi tipi di prove di Geometria
 - [Bomber](bomber/index.md) — quesiti che richiedono ingegno e tecnica.
 - [Trasversale](trasversale/index.md) — esercizi che combinano più argomenti.
 - [Lunga Durata](lunga-durata/index.md) — prove che richiedono molto tempo.
+- [PDF](pdf/index.md) — testi d'esame in formato scaricabile.
 
 !!! tip "Axio"
     Preparati con calma: un piano ben organizzato rende gli esami meno spaventosi!
@@ -20,3 +21,7 @@ La sezione **Esami** offre una panoramica dei diversi tipi di prove di Geometria
 !!! info "Aggiornamenti"
     **Data:** 2025-08-11
     **Breve descrizione:** Collegato l'indice alla navigazione degli esami.
+
+!!! info "Aggiornamenti"
+    **Data:** 2025-08-20
+    **Breve descrizione:** Aggiunta la sezione PDF con il primo esame.

@@ -80,6 +80,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-10: Aggiunti i link ai fogli 2 e 3 nella homepage
 - 2025-08-10: Sistemata la formattazione della pagina sulla moltiplicazione tra matrici
 - 2025-08-10: Riorganizzate le hub di teoria e aggiunta una panoramica generale degli esami
+- 2025-08-20: Aggiunta sezione PDF degli esami di Geometria 1
 
 ---
 
@@ -101,3 +102,6 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 
     **Data:** 2025-08-10
     **Breve descrizione:** Registrata l'aggiunta dell'esercizio sulla somma \(W_{1}+W_{2}\) in \(P_{3}\) nel foglio 3.
+    
+    **Data:** 2025-08-20
+    **Breve descrizione:** Registrata l'aggiunta della sezione PDF degli esami di Geometria 1.

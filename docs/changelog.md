@@ -78,6 +78,8 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-09: Aggiunto Esercizio 1 sulle proiezioni ortogonali in \(\mathbb{R}^{4}\) nella sezione Esami Calcolosi
 - 2025-08-10: Inserito esercizio sulla somma \(W_{1}+W_{2}\) in \(P_{3}\) nel foglio 3
 - 2025-08-10: Aggiunti i link ai fogli 2 e 3 nella homepage
+- 2025-08-10: Sistemata la formattazione della pagina sulla moltiplicazione tra matrici
+- 2025-08-10: Riorganizzate le hub di teoria e aggiunta una panoramica generale degli esami
 
 ---
 

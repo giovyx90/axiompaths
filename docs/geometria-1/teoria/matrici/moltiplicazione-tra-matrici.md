@@ -3,7 +3,8 @@
 La moltiplicazione tra matrici consente di comporre trasformazioni lineari e di analizzare come si combinano più operazioni. In questa pagina ne presentiamo la definizione e le proprietà fondamentali, come associatività e distributività, ricordando che in generale non è commutativa.
 
 ## 1. Definizione
-Siano  
+
+Siano
 
 \[
 A \in M_{m \times n}(\mathbb{K}), \quad B \in M_{n \times p}(\mathbb{K})
@@ -148,6 +149,7 @@ Per le proprietà dell'inversa consulta la [pagina dedicata](inversa.md).
 ---
 
 !!! info "Aggiornamenti"
+    - **2025-08-10:** Sistemata la formattazione generale della pagina.
     - **2025-08-10:** Aggiunta un'introduzione che illustra scopo e proprietà principali della moltiplicazione tra matrici.
     - **2025-08-09:** Eliminati i blocchi di codice e sistemata la formattazione delle formule.
 

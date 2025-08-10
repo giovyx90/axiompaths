@@ -73,6 +73,7 @@ nav:
               - Moltiplicazione tra Matrici: geometria-1/teoria/matrici/moltiplicazione-tra-matrici.md
               - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
               - Rango e Riduzione di Gauss: geometria-1/teoria/matrici/rango-e-riduzione-di-gauss.md
+              - Determinante: geometria-1/teoria/matrici/determinante.md
           - Applicazioni:
               - Introduzione: geometria-1/teoria/applicazioni/index.md
               - Applicazioni Lineari:

@@ -1,3 +1,5 @@
+<!-- Changelog: collegato l'indice alla navigazione principale. -->
+
 # Esami
 
 La sezione **Esami** offre una panoramica dei diversi tipi di prove di Geometria 1. Qui trovi una breve descrizione e i collegamenti alle raccolte di esercizi suddivise per stile e difficoltà.
@@ -16,5 +18,5 @@ La sezione **Esami** offre una panoramica dei diversi tipi di prove di Geometria
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-10
-    **Breve descrizione:** Creata pagina di overview per i tipi di esami.
+    **Data:** 2025-08-11
+    **Breve descrizione:** Collegato l'indice alla navigazione degli esami.

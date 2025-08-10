@@ -13,6 +13,27 @@ v_1 = (1,0,1), \quad v_2 = (0,1,1), \quad v_3 = (1,1,2).
 $$
 
 **Soluzione**
+
+**Metodo A (approccio elementare)**
+Verifichiamo la dipendenza risolvendo la combinazione lineare
+
+$$
+c_1v_1 + c_2v_2 + c_3v_3 = 0.
+$$
+
+Questo porta al sistema
+
+$$
+\begin{cases}
+c_1 + c_3 = 0\\
+c_2 + c_3 = 0\\
+c_1 + c_2 + 2c_3 = 0
+\end{cases}
+$$
+
+Dalle prime due equazioni otteniamo \(c_1 = -c_3\) e \(c_2 = -c_3\). Sostituendo nella terza, essa risulta identicamente vera, quindi esistono soluzioni non banali. I vettori sono dunque linearmente dipendenti e lo spazio generato ha dimensione \(2\); una possibile base è \(\{v_1, v_2\}\).
+
+**Metodo B (argomenti avanzati)**
 Costruiamo la matrice con i vettori come colonne:
 
 $$
@@ -34,6 +55,5 @@ Il determinante nullo indica che i vettori sono linearmente dipendenti. La dimen
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09
-    **Breve descrizione:** Inizio tracciamento delle modifiche.
-
+    **Data:** 2024-07-20
+    **Breve descrizione:** Aggiunto Metodo A elementare e rinominata la soluzione esistente come Metodo B.

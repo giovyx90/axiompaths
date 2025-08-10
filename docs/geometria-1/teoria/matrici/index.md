@@ -8,6 +8,7 @@ Benvenuto nell'hub dedicato alle **matrici**. Studieremo la loro struttura e il 
 - [Moltiplicazione tra Matrici](moltiplicazione-tra-matrici.md)
 - [Equazioni Lineari](equazioni-lineari.md)
 - [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md)
+- [Determinante](determinante.md)
 
 ## Esempi
 
@@ -44,6 +45,6 @@ A + B = \begin{pmatrix}
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09  
-    **Breve descrizione:** Aggiunta sezione sulla moltiplicazione tra matrici.
+    **Data:** 2024-10-06
+    **Breve descrizione:** Aggiunto collegamento alla pagina sul determinante.
 

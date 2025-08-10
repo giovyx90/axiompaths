@@ -1,3 +1,5 @@
+<!-- Changelog: snellita la home page e collegati gli hub di teoria ed esami. -->
+
 # 👋 Benvenuto su Axiom Paths
 
 Axio, la nostra mascotte, ti dà il benvenuto.
@@ -31,30 +33,9 @@ Contenuti in arrivo ⏳
 
 ### 📐 Geometria 1
 
- - **Teoria**
-   - [Spazi Vettoriali](geometria-1/teoria/spazi-vettoriali/index.md)
-   - [Basi e Dimensione](geometria-1/teoria/basi-e-dimensione/index.md)
-   - [Matrici](geometria-1/teoria/matrici/index.md)
-   - [Applicazioni](geometria-1/teoria/applicazioni/index.md)
-   - [Applicazioni Lineari](geometria-1/teoria/applicazioni-lineari/index.md)
-   - [Autovalori e Autovettori](geometria-1/teoria/autovalori-e-autovettori/index.md)
-   - [Forme Canoniche e Jordan](geometria-1/teoria/forme-canoniche-e-jordan/index.md)
-   - [Duali e Forme Bilineari](geometria-1/teoria/duali-e-forme-bilineari/index.md)
-   - [Prodotto Scalare e Ortonormalità](geometria-1/teoria/prodotto-scalare-e-ortonormalita/index.md)
-   - [Teoremi Classici della Geometria Proiettiva](geometria-1/teoria/teoremi-classici-geometria-proiettiva/index.md)
-
- - **Esercizi**
-   - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
-   - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
-   - [Foglio 2](geometria-1/esercizi/fogli/foglio-2.md)
-   - [Foglio 3](geometria-1/esercizi/fogli/foglio-3.md)
-
-- **Esami**
-  - [Calcoloso](geometria-1/esami/calcoloso/index.md)
-  - [Teorico](geometria-1/esami/teorico/index.md)
-  - [Bomber](geometria-1/esami/bomber/index.md)
-  - [Trasversale](geometria-1/esami/trasversale/index.md)
-  - [Lunga Durata](geometria-1/esami/lunga-durata/index.md)
+- [Teoria](geometria-1/teoria/index.md)
+- [Esercizi](geometria-1/esercizi/tematici/spazi-vettoriali.md)
+- [Esami](geometria-1/esami/index.md)
 
 ---
 
@@ -64,6 +45,5 @@ Contenuti in arrivo ⏳
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09
-    **Breve descrizione:** Integrata la sezione Esercizi con collegamento a Basi e Dimensione.
-
+    **Data:** 2025-08-10
+    **Breve descrizione:** Snellita la home page e collegati gli hub di teoria ed esami.

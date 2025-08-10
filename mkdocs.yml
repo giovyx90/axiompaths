@@ -57,6 +57,7 @@ nav:
   - "📈 Analisi 1": analisi-1/index.md
   - "📐 Geometria 1":
       - "📚 Teoria":
+          - geometria-1/teoria/index.md
           - Spazi Vettoriali:
               - Definizioni e Proprietà: geometria-1/teoria/spazi-vettoriali/definizioni.md
               - Combinazioni Lineari e Dipendenza: geometria-1/teoria/spazi-vettoriali/combinazioni-lineari.md
@@ -91,6 +92,7 @@ nav:
               - Foglio 2: geometria-1/esercizi/fogli/foglio-2.md
               - Foglio 3: geometria-1/esercizi/fogli/foglio-3.md
       - "🎓 Esami":
+          - geometria-1/esami/index.md
           - Calcoloso: geometria-1/esami/calcoloso/index.md
           - Teorico: geometria-1/esami/teorico/index.md
           - Bomber: geometria-1/esami/bomber/index.md

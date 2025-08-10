@@ -43,10 +43,11 @@ Contenuti in arrivo ⏳
    - [Prodotto Scalare e Ortonormalità](geometria-1/teoria/prodotto-scalare-e-ortonormalita/index.md)
    - [Teoremi Classici della Geometria Proiettiva](geometria-1/teoria/teoremi-classici-geometria-proiettiva/index.md)
 
-- **Esercizi**
-  - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
-  - [Basi e Dimensione](geometria-1/esercizi/tematici/basi-e-dimensione.md)
-  - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
+ - **Esercizi**
+   - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
+   - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
+   - [Foglio 2](geometria-1/esercizi/fogli/foglio-2.md)
+   - [Foglio 3](geometria-1/esercizi/fogli/foglio-3.md)
 
 - **Esami**
   - [Calcoloso](geometria-1/esami/calcoloso/index.md)

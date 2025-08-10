@@ -7,7 +7,7 @@ Approfondiamo come i sistemi lineari si risolvono tramite la riduzione di Gauss 
 
 ## Dimensione dello Span
 
-Dato un insieme di vettori $v_1,\dots,v_k\in\mathbb{R}^n$, la dimensione del loro span è pari al numero di vettori linearmente indipendenti. Disporre i $v_i$ come colonne di una matrice e ridurla a scala permette di individuarli tramite i pivot.
+Dato un insieme di vettori $v_1,\dots,v_k\in\mathbb{R}^n$, la dimensione del loro [span](../spazi-vettoriali/span.md) è pari al numero di vettori linearmente indipendenti. Disporre i $v_i$ come colonne di una matrice e ridurla a scala permette di individuarli tramite i pivot.
 
 ## Iperpiani
 

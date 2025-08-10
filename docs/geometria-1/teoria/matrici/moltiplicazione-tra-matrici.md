@@ -1,5 +1,7 @@
 # Moltiplicazione tra Matrici
 
+La moltiplicazione tra matrici consente di comporre trasformazioni lineari e di analizzare come si combinano più operazioni. In questa pagina ne presentiamo la definizione e le proprietà fondamentali, come associatività e distributività, ricordando che in generale non è commutativa.
+
 ## 1. Definizione
 Siano  
 
@@ -193,6 +195,6 @@ A \cdot A^{-1} =
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09
-    **Breve descrizione:** Eliminati i blocchi di codice e sistemata la formattazione delle formule.
+    - **2025-08-10:** Aggiunta un'introduzione che illustra scopo e proprietà principali della moltiplicazione tra matrici.
+    - **2025-08-09:** Eliminati i blocchi di codice e sistemata la formattazione delle formule.
 

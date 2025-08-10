@@ -1,4 +1,4 @@
-<!-- Changelog: collegato l'indice alla navigazione principale e aggiunta la sezione PDF. -->
+<!-- Changelog: corretta la data dell'aggiornamento relativo alla sezione PDF. -->
 
 # Esami
 
@@ -23,5 +23,5 @@ La sezione **Esami** offre una panoramica dei diversi tipi di prove di Geometria
     **Breve descrizione:** Collegato l'indice alla navigazione degli esami.
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-20
+    **Data:** 2025-08-10
     **Breve descrizione:** Aggiunta la sezione PDF con il primo esame.

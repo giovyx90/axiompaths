@@ -46,6 +46,8 @@ Contenuti in arrivo ⏳
  - **Esercizi**
    - [Spazi Vettoriali](geometria-1/esercizi/tematici/spazi-vettoriali.md)
    - [Foglio 1](geometria-1/esercizi/fogli/foglio-1.md)
+   - [Foglio 2](geometria-1/esercizi/fogli/foglio-2.md)
+   - [Foglio 3](geometria-1/esercizi/fogli/foglio-3.md)
 
 - **Esami**
   - [Calcoloso](geometria-1/esami/calcoloso/index.md)
@@ -63,5 +65,5 @@ Contenuti in arrivo ⏳
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
-    **Breve descrizione:** Aggiunta pagina sulle applicazioni generali e hub esami calcolosi.
+    **Breve descrizione:** Integrata la sezione Esercizi con collegamento a Basi e Dimensione.
 

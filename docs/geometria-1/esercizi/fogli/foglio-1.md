@@ -7,7 +7,7 @@ Primo foglio di esercizi per mettere in pratica i concetti base dell'algebra lin
 - [Definizione di spazio vettoriale e sue proprietà](../../teoria/spazi-vettoriali/definizioni.md).
 - [Operazioni tra vettori: somma, opposto e prodotto per scalare](../../teoria/spazi-vettoriali/definizioni.md).
 - [Sottospazi vettoriali](../../teoria/spazi-vettoriali/sottospazi.md).
-- [Combinazioni lineari, span e dipendenza lineare](../../teoria/spazi-vettoriali/combinazioni-lineari.md).
+- [Combinazioni lineari e dipendenza](../../teoria/spazi-vettoriali/combinazioni-lineari.md) e [span](../../teoria/spazi-vettoriali/span.md).
 - Conoscenza di polinomi reali e [matrici \(2\times 2\)](../../teoria/matrici/definizioni.md).
 
 !!! tip "Axio"

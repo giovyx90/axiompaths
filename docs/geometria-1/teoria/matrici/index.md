@@ -9,6 +9,7 @@ Benvenuto nell'hub dedicato alle **matrici**. Studieremo la loro struttura e il 
 - [Inversa di una Matrice](inversa.md)
 - [Equazioni Lineari](equazioni-lineari.md)
 - [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md)
+- [Determinante](determinante.md)
 
 ## Esempi
 
@@ -46,5 +47,5 @@ A + B = \begin{pmatrix}
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-10
-    **Breve descrizione:** Aggiunta pagina sull'inversa delle matrici.
+    **Breve descrizione:** Aggiunto collegamento alla pagina sul determinante.
 

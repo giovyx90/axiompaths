@@ -88,6 +88,7 @@ nav:
       - "📝 Esercizi":
           - Tematici:
               - Spazi Vettoriali: geometria-1/esercizi/tematici/spazi-vettoriali.md
+              - Basi e Dimensione: geometria-1/esercizi/tematici/basi-e-dimensione.md
               - Applicazioni Lineari: geometria-1/esercizi/tematici/applicazioni-lineari-e-matrici.md
           - Fogli:
               - Foglio 1: geometria-1/esercizi/fogli/foglio-1.md

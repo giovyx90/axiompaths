@@ -65,5 +65,5 @@ Contenuti in arrivo ⏳
 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-09
-    **Breve descrizione:** Aggiunta pagina sulle applicazioni generali e hub esami calcolosi.
+    **Breve descrizione:** Integrata la sezione Esercizi con collegamento a Basi e Dimensione.
 

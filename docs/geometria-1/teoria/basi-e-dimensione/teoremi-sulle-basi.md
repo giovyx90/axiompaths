@@ -7,7 +7,7 @@ Raccogliamo alcuni risultati utili per manipolare le [basi](basi.md) e comprende
 Un insieme $\{v_1,\dots,v_r\}\subseteq V$ è **massimale** se ogni altro
 $v_i$ con $i>r$ rende dipendente l'insieme $\{v_1,\dots,v_r,v_i\}$.
 
-Per un ripasso su combinazioni lineari e span, vedi la sezione sugli [spazi vettoriali](../spazi-vettoriali/index.md).
+Per un ripasso su combinazioni lineari consulta [Combinazioni Lineari e Dipendenza](../spazi-vettoriali/combinazioni-lineari.md); per lo span vedi [Span](../spazi-vettoriali/span.md).
 
 !!! tip "Axio"
     Pensa a quali vettori sono davvero indispensabili: quelli superflui appesantiscono solo il bagaglio!

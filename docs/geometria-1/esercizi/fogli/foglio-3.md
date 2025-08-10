@@ -218,33 +218,33 @@ Calcolare \(W_{1}+W_{2}\) e le dimensioni in gioco.
 
 1. Le valutazioni \(\operatorname{ev}_{1}(p)=p(1)\) e \(\operatorname{ev}_{2}(p)=p(2)\) sono applicazioni lineari suriettive; dunque
 
-   \[
-   \dim W_{1}=\dim W_{2}=4-1=3.
-   \]
+\[
+\dim W_{1}=\dim W_{2}=4-1=3.
+\]
 
 2. Consideriamo \(T:P_{3}\to\mathbb{R}^{2}\) definita da \(T(p)=(p(1),p(2))\). Poiché
 
-   \[
-   T(1)=(1,1),\qquad T(x)=(1,2)
-   \]
+\[
+T(1)=(1,1),\qquad T(x)=(1,2)
+\]
 
    sono vettori l.i. in \(\mathbb{R}^{2}\), \(\operatorname{rank}T=2\) e quindi
 
-   \[
-   \dim(W_{1}\cap W_{2})=4-2=2.
-   \]
+\[
+\dim(W_{1}\cap W_{2})=4-2=2.
+\]
 
 3. Per la [formula di Grassmann](../../teoria/basi-e-dimensione/teorema-di-grassmann.md)
 
-   \[
-   \dim(W_{1}+W_{2})=3+3-2=4.
-   \]
+\[
+\dim(W_{1}+W_{2})=3+3-2=4.
+\]
 
    Dato che \(\dim P_{3}=4\), si ottiene
 
-   \[
-   W_{1}+W_{2}=P_{3}.
-   \]
+\[
+W_{1}+W_{2}=P_{3}.
+\]
 
 Una base di \(W_{1}\cap W_{2}\) è \(\{(x-1)(x-2),\; x(x-1)(x-2)\}\).
 
@@ -254,17 +254,17 @@ Identifichiamo \(p(x)=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}\) con \((a_{0},a_{1},a_
 
 1. Le condizioni \(p(1)=0\) e \(p(2)=0\) si traducono in
 
-   \[
-   a_{0}+a_{1}+a_{2}+a_{3}=0,\qquad a_{0}+2a_{1}+4a_{2}+8a_{3}=0,
-   \]
+\[
+a_{0}+a_{1}+a_{2}+a_{3}=0,\qquad a_{0}+2a_{1}+4a_{2}+8a_{3}=0,
+\]
 
    da cui \(\dim W_{1}=\dim W_{2}=3\).
 
 2. Risolvendo il sistema con entrambe le equazioni otteniamo
 
-   \[
-   (a_{0},a_{1},a_{2},a_{3})=s(2,-3,1,0)+t(6,-7,0,1),
-   \]
+\[
+(a_{0},a_{1},a_{2},a_{3})=s(2,-3,1,0)+t(6,-7,0,1),
+\]
 
    e quindi \(\dim(W_{1}\cap W_{2})=2\).
 

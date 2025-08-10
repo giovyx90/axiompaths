@@ -1,14 +1,22 @@
-<!-- Changelog: rimossa la preview dell'esame 1, aggiunto link al viewer e nota su file con soluzioni e autovalutazione. -->
+<!-- Changelog: riorganizzata la sezione PDF con categorie e indicazione delle soluzioni già disponibili. -->
 
 # Esami in PDF
 
-Benvenuto nella sezione **PDF** degli esami di Geometria 1. Qui troverai i testi d'esame pronti da scaricare e consultare direttamente dal browser.
+Questa pagina raccoglie i testi d'esame di Geometria 1 in formato PDF, organizzati per provenienza.
 
-## Risorse
+## Esami Originali di Axiom Paths
 
-- [Esame 1 — apri nel viewer](esame1.pdf) — primo test d'esame in formato PDF.
+- [Esame1.pdf](esame1.pdf)
 
-Presto sarà disponibile un file unico con il testo dell'esame, le soluzioni e una tabella di autovalutazione.
+## Esami Parziali di UNIFI
+
+- In arrivo presto
+
+## Esami Interi di Unifi
+
+- IN ARRIVO PRESTO
+
+Ogni PDF include il testo dell'esame, le soluzioni e una tabella di autovalutazione.
 
 !!! tip "Axio"
     Scarica il PDF e prova a svolgerlo come se fossi in aula!
@@ -18,3 +26,6 @@ Presto sarà disponibile un file unico con il testo dell'esame, le soluzioni e u
 !!! info "Aggiornamenti"
     **Data:** 2025-08-10
     **Breve descrizione:** Aggiunta la sezione PDF con il primo esame.
+
+    **Data:** 2025-08-10
+    **Breve descrizione:** Riorganizzata la sezione PDF con categorie e soluzioni incluse.

@@ -71,6 +71,7 @@ nav:
               - Introduzione: geometria-1/teoria/matrici/index.md
               - Definizioni e Operazioni: geometria-1/teoria/matrici/definizioni.md
               - Moltiplicazione tra Matrici: geometria-1/teoria/matrici/moltiplicazione-tra-matrici.md
+              - Inversa di una Matrice: geometria-1/teoria/matrici/inversa.md
               - Equazioni Lineari: geometria-1/teoria/matrici/equazioni-lineari.md
               - Rango e Riduzione di Gauss: geometria-1/teoria/matrici/rango-e-riduzione-di-gauss.md
           - Applicazioni:

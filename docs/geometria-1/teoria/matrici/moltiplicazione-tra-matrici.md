@@ -143,54 +143,7 @@ A \cdot B =
 
 ## 4. Invertibilità e inversa
 
-Una matrice quadrata \(A \in M_{n \times n}(\mathbb{K})\) è **invertibile** se esiste \(A^{-1}\) tale che:
-
-\[
-A \cdot A^{-1} = I_n \quad \text{e} \quad A^{-1} \cdot A = I_n
-\]
-
-dove \(I_n\) è la matrice identità.
-
-📌 **Proprietà**:
-- \(A\) è invertibile ⇔ \(\det(A) \neq 0\).
-- L’inversa è unica.
-- Se \(A\) e \(B\) sono invertibili, \((AB)^{-1} = B^{-1}A^{-1}\).
-
-💡 **Esempio**
-
-Sia  
-
-\[
-A =
-\begin{pmatrix}
-2 & 1 \\
-5 & 3
-\end{pmatrix}
-\]
-
-\(\det(A) = 2\cdot 3 - 5\cdot 1 = 1 \neq 0\) ⇒ \(A\) è invertibile.  
-L’inversa è:
-
-\[
-A^{-1} =
-\begin{pmatrix}
-3 & -1 \\
--5 & 2
-\end{pmatrix}
-\]
-
-Verifica:
-
-\[
-A \cdot A^{-1} =
-\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix}
-\]
-
-!!! tip "Axio"
-    Se vuoi invertire una matrice, assicurati che il suo determinante non sia zero. È come voler dividere: se dividi per zero, sei nei guai!
+Per le proprietà dell'inversa consulta la [pagina dedicata](inversa.md).
 
 ---
 

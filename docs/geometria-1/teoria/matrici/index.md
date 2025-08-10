@@ -6,6 +6,7 @@ Benvenuto nell'hub dedicato alle **matrici**. Studieremo la loro struttura e il 
 
 - [Definizioni e Operazioni](definizioni.md)
 - [Moltiplicazione tra Matrici](moltiplicazione-tra-matrici.md)
+- [Inversa di una Matrice](inversa.md)
 - [Equazioni Lineari](equazioni-lineari.md)
 - [Rango e Riduzione di Gauss](rango-e-riduzione-di-gauss.md)
 - [Determinante](determinante.md)
@@ -45,6 +46,6 @@ A + B = \begin{pmatrix}
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2024-10-06
+    **Data:** 2025-08-10
     **Breve descrizione:** Aggiunto collegamento alla pagina sul determinante.
 

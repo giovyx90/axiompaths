@@ -1,0 +1,4 @@
+/* Stili per la sezione Learning Paths */
+.path-card { border: 1px solid #eee; padding: 1rem; border-radius: 8px; }
+.path-badge { background: #e0f2ff; color: #0366d6; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
+.final-lap { border-left: 4px solid #ffd54f; padding-left: 0.5rem; }

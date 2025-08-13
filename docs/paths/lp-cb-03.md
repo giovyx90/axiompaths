@@ -20,7 +20,7 @@ Impara a passare da una base all'altra costruendo le matrici di cambio base e ag
 5) *MapUpdate*: $[T]_{B'} = P^{-1}[T]_B P$ (se $B'$ su dominio e codominio coincidenti).
 
 ```mermaid
-flowchart TD
+graph TD
   A[ValidateBases] --> B[BuildP]
   B --> C[InvertP]
   C --> D{Vector o mappa?}
@@ -37,3 +37,6 @@ Errori comuni: verso del cambio ($B\leftarrow B'$); dimenticare che le colonne d
 !!! info "Aggiornamenti"
     **Data:** 2025-08-10
     **Breve descrizione:** Aggiunto percorso LP-CB-03.
+
+    **Data:** 2025-08-13
+    **Breve descrizione:** Corretto diagramma mermaid.

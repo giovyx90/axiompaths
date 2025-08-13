@@ -21,9 +21,9 @@ Mini percorso per verificare se un sottoinsieme è sottospazio e ricavarne base 
 6) *DimRead*: $\dim(W) =$ #vettori di base.
 
 ```mermaid
-flowchart TD
+graph TD
   A[NormalizeW] --> B{W=Span o Ax=0?}
-  B -->|Span| C[RREF su [v1…vk]]
+  B -->|Span| C[RREF su [v1...vk]]
   B -->|Ax=0| D[RREF su A]
   C --> E[Base(W)]
   D --> E
@@ -37,3 +37,6 @@ Errori comuni: confondere #equazioni con $\dim(W)$; contare pivot sulla matrice 
 !!! info "Aggiornamenti"
     **Data:** 2025-08-10
     **Breve descrizione:** Aggiunto percorso LP-SV-01.
+
+    **Data:** 2025-08-13
+    **Breve descrizione:** Corretto diagramma mermaid.

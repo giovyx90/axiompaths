@@ -1,0 +1,101 @@
+/* -------------------------------------------------
+   AXIOM PATHS — extra.css      v1.0  (plug-and-play)
+   -------------------------------------------------
+   • palette b/n minimale
+   • tipografia leggibile
+   • larghezza contenuto controllata
+   • toc laterale più chiaro
+   • toc corrente evidenziato
+   ------------------------------------------------- */
+
+/* ====== ROOT TOKENS ================================= */
+:root{
+  --ap-width:880px;                 /* max larghezza colonna */
+  --ap-border:#e6e6e6;              /* hair-line gray        */
+  --ap-accent:#000;                 /* unico accento         */
+  --ap-code   :#0d0d0d;             /* bg blocchi <pre>      */
+  --ap-code-fg:#fafafa;             /* fg codice blocco      */
+}
+
+/* ====== LAYOUT & TYPO ================================= */
+.md-content__inner{
+  max-width:var(--ap-width);
+  margin-inline:auto;
+}
+
+.md-typeset h1,
+.md-typeset h2{
+  font-family:"DotGothic16",monospace;
+  letter-spacing:.04em;
+  font-weight:400;
+}
+
+.md-typeset h1{line-height:.9}
+.md-typeset h2{margin-top:3.5rem}
+
+/* ====== NAVBAR & SIDEBAR ============================= */
+.md-header{
+  border-bottom:1px solid var(--ap-border);
+  box-shadow:none;
+}
+
+.md-sidebar{
+  border-right:1px solid var(--ap-border);
+}
+
+/* TOC in pagina */
+.md-nav--secondary .md-nav{
+  font-size:.85rem;
+}
+.md-nav__link--active,
+.md-nav__link--active:hover{
+  color:var(--ap-accent);
+  font-weight:600;
+}
+
+/* ====== LINK E HOVER ================================= */
+.md-typeset a{
+  text-decoration:none;
+  border-bottom:1px solid rgba(0,0,0,.18);
+  color:inherit;
+}
+.md-typeset a:hover{
+  border-bottom-color:var(--ap-accent);
+}
+
+/* ====== BLOCCO CODICE ================================= */
+.md-typeset pre>code{
+  background:var(--ap-code);
+  color:var(--ap-code-fg);
+  border:1px solid var(--ap-border);
+  border-radius:6px;
+  padding:1.1rem 1.4rem;
+}
+.md-typeset code{
+  background:#f7f7f7;
+  padding:.15em .35em;
+  border-radius:4px;
+}
+
+/* ====== TABELLE ====================================== */
+.md-typeset table:not([class]){
+  width:100%;
+  border:1px solid var(--ap-border);
+  border-collapse:collapse;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td{
+  border:1px solid var(--ap-border);
+  padding:.6em .8em;
+}
+.md-typeset table:not([class]) th{
+  background:#fafafa;
+  font-weight:600;
+}
+
+/* ====== MEDIA QUERY — MOBILE ========================= */
+@media(max-width:960px){
+  :root{ --ap-width:92vw }
+  .md-sidebar{border-right:none}
+}
+

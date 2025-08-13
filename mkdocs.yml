@@ -25,7 +25,7 @@ theme:
 # logo:   ← rimosso
 
 extra_css:
-  - stylesheets/custom.css
+  - stylesheets/extra.css
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
   - styles/print.css
 markdown_extensions:

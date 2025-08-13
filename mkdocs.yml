@@ -34,7 +34,10 @@ markdown_extensions:
     permalink: true
 - pymdownx.arithmatex:
     generic: true
-- pymdownx.superfences
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
 - pymdownx.details
 extra_javascript:
 - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
@@ -43,6 +46,8 @@ extra_javascript:
 - https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js
 - js/download.js
 - assets/paths.js
+- https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+- js/mermaid-init.js
 nav:
 - 🏠 Home: index.md
 - 🛠️ Guida Pagine: guida-pagine.md

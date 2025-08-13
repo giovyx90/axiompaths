@@ -1,4 +1,3 @@
-<!-- Changelog: nuova homepage con link alla wiki MkDocs -->
 <!doctype html>
 <html lang="it">
 <head>
@@ -6,34 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Axiom Paths</title>
 
-<!-- Font “dot-matrix” + Inter (stile nothing.tech) -->
+<!-- Font dot-matrix + Inter -->
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    
-      <link rel="stylesheet" href="styles/print.css">
-    
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
+<style>
+:root{
+  --maxw:880px;
+  --acc :#000;
+  --hair:#e6e6e6;
+}
 
-/* ====== RESET MINIMO ====== */
+/* reset */
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -41,54 +23,56 @@ body{
   color:#000;background:#fff;-webkit-font-smoothing:antialiased;
 }
 
-/* ====== TIPOGRAFIA NOTHING ====== */
-h1,h2{
-  font-family:"DotGothic16",monospace;
-  font-weight:400;letter-spacing:.04em;margin:0 0 .2em;
-}
+/* titoli */
+h1,h2{font-family:"DotGothic16",monospace;font-weight:400;letter-spacing:.04em;margin:0 0 .2em}
 h1{font-size:clamp(48px,9vw,112px);line-height:.9}
 h2{font-size:32px;margin-top:72px}
 
-/* ====== LAYOUT ====== */
+/* layout */
 .wrapper{max-width:var(--maxw);margin:0 auto;padding:56px 22px}
 .lead{max-width:60ch;font-size:18px;color:#555}
 
-/* ====== NAVIGAZIONE ====== */
-header{
-  position:sticky;top:0;z-index:10;
-  background:#fff;border-bottom:1px solid var(--hair);
-}
+/* nav */
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--hair)}
 nav{
-  max-width:var(--maxw);margin:0 auto;
-  padding:18px 22px;display:flex;justify-content:space-between;align-items:center;
+  max-width:var(--maxw);margin:0 auto;padding:18px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
 }
-.brand{font-family:"DotGothic16",monospace;font-size:24px}
+.brand{font-family:"DotGothic16",monospace;font-size:24px;white-space:nowrap}
+
+.menu{display:flex;align-items:center;gap:28px}
 .menu a{
-  margin-left:28px;text-decoration:none;color:inherit;position:relative;font-weight:500;
+  text-decoration:none;color:inherit;position:relative;font-weight:500
 }
 .menu a::after{
   content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--acc);
-  transition:width .35s ease;
+  transition:width .35s ease
 }
 .menu a:hover::after{width:100%}
 
-/* ====== LISTE ====== */
+/* tagline rotante */
+.tagline{
+  font-size:.78rem;font-weight:500;color:#555;white-space:nowrap;
+  overflow:hidden;min-width:200px;text-align:right;font-family:"Inter",sans-serif;
+}
+
+/* liste */
 ul{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--hair)}
 li{padding:14px 0;border-bottom:1px solid var(--hair)}
 
-/* ====== CALL-TO-ACTION ====== */
+/* cta */
 .cta{
-  display:inline-block;margin-top:32px;
-  padding:14px 24px;border:1px solid var(--acc);border-radius:999px;
-  font-weight:600;font-size:.9rem;text-decoration:none;color:#000;
-  transition:background .25s ease,color .25s ease;
+  display:inline-block;margin-top:32px;padding:14px 24px;
+  border:1px solid var(--acc);border-radius:999px;font-weight:600;font-size:.9rem;
+  text-decoration:none;color:#000;transition:background .25s,color .25s
 }
 .cta:hover{background:#000;color:#fff}
 
-/* ====== RESPONSIVE ====== */
-@media (max-width:640px){
-  nav{flex-direction:column;gap:12px}
-  .menu a{margin:0 16px}
+/* responsive */
+@media(max-width:640px){
+  nav{flex-direction:column;align-items:flex-start}
+  .menu{gap:16px;flex-wrap:wrap}
+  .tagline{text-align:left;margin-top:6px}
 }
 </style>
 </head>
@@ -99,16 +83,20 @@ li{padding:14px 0;border-bottom:1px solid var(--hair)}
 <header>
   <nav>
     <div class="brand">AXIOM&nbsp;PATHS</div>
+
     <div class="menu">
       <a href="#hub">Hub</a>
       <a href="#esercizi">Esercizi</a>
       <a href="#changelog">Changelog</a>
-      <a href="docs/">Wiki&nbsp;↗</a>
+      <a href="#">Wiki&nbsp;↗</a>
     </div>
+
+    <!-- tagline dinamica -->
+    <span class="tagline" id="tagline">Fallo con cura. Fallo con stile.</span>
   </nav>
 </header>
 
-<!-- ====== CONTENUTO ====== -->
+<!-- ====== MAIN ====== -->
 <main class="wrapper">
 
   <!-- HERO -->
@@ -118,10 +106,9 @@ li{padding:14px 0;border-bottom:1px solid var(--hair)}
     </p>
     <h1>Axiom Paths</h1>
     <p class="lead">
-      Matematica, teoria ed esercizi d’esame pronti all'uso.
-<h2>Cut the noise. Keep the math.</h2>
+      Corsi di Matematica completamente open source, dagli studenti, per gli studenti. Come to study!
     </p>
-    <a class="cta" href="docs/">Entra nella Wiki&nbsp;↗</a>
+    <a class="cta" href="#">Entra nella Wiki&nbsp;↗</a>
   </section>
 
   <!-- HUB -->
@@ -156,6 +143,7 @@ li{padding:14px 0;border-bottom:1px solid var(--hair)}
   <section id="changelog">
     <h2>Changelog</h2>
     <ul>
+      <li>v3.1 — Tagline rotante nella nav</li>
       <li>v3.0 — Restyle Nothing-like, contrasto 100 %, tipografia dot-matrix</li>
       <li>v2.0 — Accento blu elettrico, font VT323 + IBM Plex Mono, reveal on scroll</li>
       <li>v1.1 — Gradient “orizzonte”, punti più fini, titolo bianco con micro-ombra</li>
@@ -164,6 +152,24 @@ li{padding:14px 0;border-bottom:1px solid var(--hair)}
   </section>
 
 </main>
+
+<!-- ====== JS: ciclo tagline ====== -->
+<script>
+const taglines=[
+  "Fallo con cura. Fallo con stile.",
+  "Modern problems require modern wikis.",
+  "Ship knowledge, not noise.",
+  "Rigor first. Then speed.",
+  "Build once. Learn forever.",
+  "Less friction, more theorems."
+];
+let idx=0;
+const el=document.getElementById("tagline");
+setInterval(()=>{
+  idx=(idx+1)%taglines.length;
+  el.textContent=taglines[idx];
+},4000);
+</script>
 
 </body>
 </html>

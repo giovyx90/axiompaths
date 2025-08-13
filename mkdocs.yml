@@ -53,6 +53,10 @@ nav:
   - "🏠 Home": index.md
   - "🛠️ Guida Pagine": guida-pagine.md
   - "🧩 Axio Quest": quest/soluzioni-axio-quest.md
+  - "🌟 Axiom Paths Originals":
+      - "📘 Teoria": axiom-paths-originals/teoria.md
+      - "📄 Esami": geometria-1/esami/axiom-paths-originals/index.md
+      - "🕑 Coming soon": axiom-paths-originals/coming-soon.md
   - "🕒 Changelog": changelog.md
   - "📈 Analisi 1": analisi-1/index.md
   - "📐 Geometria 1":
@@ -98,4 +102,4 @@ nav:
           - Bomber: geometria-1/esami/bomber/index.md
           - Trasversale: geometria-1/esami/trasversale/index.md
           - Lunga Durata: geometria-1/esami/lunga-durata/index.md
-          - PDF: geometria-1/esami/pdf/index.md
+          - Axiom Paths Originals: geometria-1/esami/axiom-paths-originals/index.md

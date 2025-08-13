@@ -8,7 +8,7 @@ Questa pagina offre una panoramica dei percorsi guidati pensati per affrontare i
     Scegli il percorso che ti serve e affrontalo un lap alla volta!
 
 ```mermaid
-flowchart TD
+graph TD
     Start[Partenza] --> SV01[SV-01]
     Start --> SV02[SV-02]
     Start --> CB03[CB-03]
@@ -29,3 +29,6 @@ flowchart TD
 !!! info "Aggiornamenti"
     **Data:** 2025-08-13
     **Breve descrizione:** Aggiunta mappa dei percorsi e descrizioni sintetiche.
+
+    **Data:** 2025-08-13
+    **Breve descrizione:** Corretto diagramma mermaid.

@@ -85,6 +85,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-10: Aggiunta sezione PDF degli esami di Geometria 1
 - 2025-08-10: Riorganizzata la sezione PDF degli esami con categorie e soluzioni
 - 2025-08-13: Sostituito il foglio di stile con extra.css minimale
+- 2025-08-13: Corrette sintassi Mermaid nei Learning Paths
 
 ---
 
@@ -112,3 +113,6 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 
     **Data:** 2025-08-10
     **Breve descrizione:** Registrata la riorganizzazione della sezione PDF degli esami con categorie e soluzioni.
+
+    **Data:** 2025-08-13
+    **Breve descrizione:** Corrette sintassi Mermaid nei percorsi.

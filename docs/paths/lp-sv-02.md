@@ -20,7 +20,7 @@ Scopri se un insieme di vettori è indipendente e come completarlo a base del ve
 5) *SolveCoords*: risolvi $M c = v$ (se compatibile).
 
 ```mermaid
-flowchart TD
+graph TD
   A[MatrixCols] --> B[RREF]
   B --> C[PivotRead]
   C --> D[ExtractBase]
@@ -36,3 +36,6 @@ Errori comuni: usare colonne della RREF invece delle originali; chiedere coordin
 !!! info "Aggiornamenti"
     **Data:** 2025-08-10
     **Breve descrizione:** Aggiunto percorso LP-SV-02.
+
+    **Data:** 2025-08-13
+    **Breve descrizione:** Corretto diagramma mermaid.

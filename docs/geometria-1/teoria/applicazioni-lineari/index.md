@@ -9,8 +9,13 @@ Le **applicazioni lineari** collegano spazi vettoriali preservando la struttura 
 !!! tip "Axio"
     Trasforma problemi complessi in linee rette: la linearità è tua alleata!
 
+!!! note "Vai ai Learning Paths collegati"
+    - [AL-04 — Definire T: linearità e matrice](../../../paths/lp-al-04.md)
+    - [KI-05 — Ker, Im, Rank–Nullity, classificazione](../../../paths/lp-ki-05.md)
+    - [CB-03 — Cambio di base (vettori e matrici)](../../../paths/lp-cb-03.md)
+
 ---
 
 !!! info "Aggiornamenti"
-    **Data:** 2025-08-09
-    **Breve descrizione:** Riorganizzata come hub delle applicazioni lineari dopo la separazione dalle applicazioni generali.
+    **Data:** 2025-08-10
+    **Breve descrizione:** Aggiunti link ai Learning Paths.

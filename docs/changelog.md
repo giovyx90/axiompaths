@@ -1,4 +1,4 @@
-<!-- Changelog: registrata la riorganizzazione della sezione PDF degli esami con categorie e soluzioni. -->
+<!-- Changelog: sostituito lo stile custom.css con extra.css minimale. -->
 
 # Registro delle modifiche
 
@@ -84,6 +84,7 @@ Le voci sono ordinate dalla più vecchia alla più recente.
 - 2025-08-10: Riorganizzate le hub di teoria e aggiunta una panoramica generale degli esami
 - 2025-08-10: Aggiunta sezione PDF degli esami di Geometria 1
 - 2025-08-10: Riorganizzata la sezione PDF degli esami con categorie e soluzioni
+- 2025-08-13: Sostituito il foglio di stile con extra.css minimale
 
 ---
 

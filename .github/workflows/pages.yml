@@ -1,5 +1,4 @@
-
-name: Deploy Pages (landing + MkDocs wiki)
+name: Deploy Pages (landing + wiki)
 
 on:
   push:
@@ -16,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Build MkDocs
+      # Build wiki con MkDocs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -29,8 +28,9 @@ jobs:
           rm -rf publish && mkdir -p publish/wiki
           cp -r index.html assets publish/
           cp -r site/* publish/wiki/
+          touch publish/.nojekyll
 
-      # Configura Pages + carica artifact
+      # Configura e carica artifact Pages
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

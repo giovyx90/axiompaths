@@ -1,0 +1,2518 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Wiki open-source di matematica, esercizi e appunti">
+      
+      
+      
+      
+        <link rel="prev" href="../foglio-2/">
+      
+      
+        <link rel="next" href="../../../esami/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>Foglio 3 - Axiom Paths</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../../styles/print.css">
+    
+      <link rel="stylesheet" href="../../../../assets/paths.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foglio-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Axiom Paths" class="md-header__button md-logo" aria-label="Axiom Paths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Axiom Paths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Foglio 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/giovyx90/axiompaths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Axiom Paths" class="md-nav__button md-logo" aria-label="Axiom Paths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Axiom Paths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/giovyx90/axiompaths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../guida-pagine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🛠️ Guida Pagine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../quest/soluzioni-axio-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧩 Axio Quest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../paths/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    🎯 Learning Paths
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            🎯 Learning Paths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../paths/lp-sv-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SV-01 — Sottospazi, base e dimensione
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../paths/lp-sv-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SV-02 — Indipendenza, span e completamento a base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../paths/lp-cb-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CB-03 — Cambio di base: vettori e matrici
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../paths/lp-al-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AL-04 — Definire T: linearità e matrice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../paths/lp-ki-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    KI-05 — Ker, Im, Rank–Nullity, classificazione
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../esami/axiom-paths-originals/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    🌟 Axiom Paths Originals
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            🌟 Axiom Paths Originals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../axiom-paths-originals/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📘 Teoria
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../axiom-paths-originals/coming-soon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕑 Coming soon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕒 Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../analisi-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📈 Analisi 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    📐 Geometria 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            📐 Geometria 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../teoria/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    📚 Teoria
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            📚 Teoria
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_2" id="__nav_8_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Spazi Vettoriali
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Spazi Vettoriali
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/spazi-vettoriali/definizioni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definizioni e Proprietà
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/spazi-vettoriali/combinazioni-lineari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Combinazioni Lineari e Dipendenza
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/spazi-vettoriali/span/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Span
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/spazi-vettoriali/sottospazi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sottospazi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_3" id="__nav_8_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Basi e Dimensione
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Basi e Dimensione
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/basi-e-dimensione/basi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/basi-e-dimensione/teoremi-sulle-basi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teoremi sulle Basi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/basi-e-dimensione/teorema-di-grassmann/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teorema di Grassmann
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_4" id="__nav_8_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Matrici
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Matrici
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/definizioni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definizioni e Operazioni
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/moltiplicazione-tra-matrici/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moltiplicazione tra Matrici
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/inversa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inversa di una Matrice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/equazioni-lineari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Equazioni Lineari
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/rango-e-riduzione-di-gauss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rango e Riduzione di Gauss
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/matrici/determinante/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Determinante
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_5" id="__nav_8_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Applicazioni
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Applicazioni
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_5_1" id="__nav_8_1_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Applicazioni Lineari
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_1_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Applicazioni Lineari
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/applicazioni-lineari/definizione-e-proprieta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definizione e Proprietà
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/autovalori-e-autovettori/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autovalori e Autovettori
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/forme-canoniche-e-jordan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forme Canoniche e Jordan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/duali-e-forme-bilineari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Duali e Forme Bilineari
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/prodotto-scalare-e-ortonormalita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prodotto Scalare e Ortonormalità
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teoria/teoremi-classici-geometria-proiettiva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teoremi Classici della Geometria Proiettiva
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📝 Esercizi
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            📝 Esercizi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_1" id="__nav_8_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tematici
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tematici
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tematici/spazi-vettoriali/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spazi Vettoriali
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tematici/basi-e-dimensione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basi e Dimensione
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tematici/applicazioni-lineari-e-matrici/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Applicazioni Lineari
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2" id="__nav_8_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fogli
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fogli
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foglio-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Foglio 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foglio-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Foglio 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Foglio 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Foglio 3
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisiti
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizio-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Esercizio 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodo-a-funzionali-lineari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodo A — Funzionali lineari
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodo-b-coefficienti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodo B — Coefficienti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../esami/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    🎓 Esami
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            🎓 Esami
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/calcoloso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calcoloso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/teorico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teorico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/bomber/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bomber
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/trasversale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trasversale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/lunga-durata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lunga Durata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../esami/axiom-paths-originals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 Esami
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="foglio-3">Foglio 3<a class="headerlink" href="#foglio-3" title="Permanent link">&para;</a></h1>
+<p>Terzo foglio di esercizi dedicato a matrici e sottospazi.</p>
+<div class="admonition warning">
+<p class="admonition-title">Axio ti avvisa</p>
+<p>Questo foglio è una bozza: gli esercizi potrebbero essere rivisti e l'elenco non è completo.</p>
+</div>
+<h2 id="prerequisiti">Prerequisiti<a class="headerlink" href="#prerequisiti" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../../teoria/matrici/definizioni/">Definizioni e operazioni sulle matrici</a></li>
+<li><a href="../../../teoria/basi-e-dimensione/basi/">Basi e dimensione degli spazi vettoriali</a></li>
+<li><a href="../../../teoria/spazi-vettoriali/sottospazi/">Sottospazi vettoriali</a></li>
+</ul>
+<h2 id="esercizio-1">Esercizio 1<a class="headerlink" href="#esercizio-1" title="Permanent link">&para;</a></h2>
+<p>Determinare la dimensione dello spazio</p>
+<div class="arithmatex">\[
+W=\{A\in M_{n\times n}(\mathbb{R}) : \mathrm{tr}(A)=0\}.
+\]</div>
+<p><strong>Soluzione</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Axio ti suggerisce</p>
+<p>Usa le matrici canoniche <span class="arithmatex">\(E_{ij}\)</span> per organizzare le tue idee: sono una base naturale di <span class="arithmatex">\(M_{n\times n}(\mathbb{R})\)</span>.</p>
+</div>
+<ol>
+<li>
+<p>Le matrici canoniche <span class="arithmatex">\(E_{ij}\)</span> (un <span class="arithmatex">\(1\)</span> in <span class="arithmatex">\((i,j)\)</span>, zeri altrove) formano una base di <span class="arithmatex">\(M_{n\times n}(\mathbb{R})\)</span>.</p>
+</li>
+<li>
+<p>Se <span class="arithmatex">\(i\neq j\)</span>, la matrice <span class="arithmatex">\(E_{ij}\)</span> ha diagonale nulla, quindi <span class="arithmatex">\(\mathrm{tr}(E_{ij})=0\)</span>. Vi sono <span class="arithmatex">\(n^{2}-n\)</span> di queste matrici e appartengono tutte a <span class="arithmatex">\(W\)</span>.</p>
+</li>
+<li>
+<p>Le matrici diagonali sono combinazioni di <span class="arithmatex">\(E_{11},\dots,E_{nn}\)</span>. L'unico vincolo per essere in <span class="arithmatex">\(W\)</span> è che la somma degli elementi diagonali sia zero, cioè</p>
+</li>
+</ol>
+<div class="arithmatex">\[
+a_{11}+a_{22}+\cdots+a_{nn}=0.
+\]</div>
+<p>Questo vincolo lineare riduce di uno i gradi di libertà: lo spazio delle diagonali a somma zero ha dimensione <span class="arithmatex">\(n-1\)</span>.</p>
+<ol>
+<li>Sommando i contributi otteniamo</li>
+</ol>
+<div class="arithmatex">\[
+\dim W = (n^{2}-n)+(n-1)=n^{2}-1.
+\]</div>
+<ol>
+<li>Una base esplicita di <span class="arithmatex">\(W\)</span> è data da tutte le <span class="arithmatex">\(E_{ij}\)</span> con <span class="arithmatex">\(i\neq j\)</span> insieme alle <span class="arithmatex">\(n-1\)</span> matrici diagonali</li>
+</ol>
+<div class="arithmatex">\[ 
+E_{11}-E_{nn},\;E_{22}-E_{nn},\;\dots,\;E_{n-1,n-1}-E_{nn}.
+\]</div>
+<hr />
+<h2 id="esercizio-2">Esercizio 2<a class="headerlink" href="#esercizio-2" title="Permanent link">&para;</a></h2>
+<p>Nel vettoriale spazio <span class="arithmatex">\(\mathbb{R}^{3}\)</span> siano</p>
+<div class="arithmatex">\[
+v=\begin{pmatrix}1\\0\\1\end{pmatrix},\qquad
+w_{1}=\begin{pmatrix}3\\1\\-1\end{pmatrix},\qquad
+w_{2}=\begin{pmatrix}5\\2\\-3\end{pmatrix}.
+\]</div>
+<p>Siano <span class="arithmatex">\(W_{1}=L(v)\)</span> e <span class="arithmatex">\(W_{2}=L(w_{1},w_{2})\)</span>. Calcolare:</p>
+<ol>
+<li><span class="arithmatex">\(\dim W_{1}\)</span> e <span class="arithmatex">\(\dim W_{2}\)</span>;</li>
+<li><span class="arithmatex">\(\dim (W_{1}\cap W_{2})\)</span>;</li>
+<li><span class="arithmatex">\(\dim (W_{1}+W_{2})\)</span>.</li>
+</ol>
+<p><strong>Soluzione</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Axio ti domanda</p>
+<p>Riesci a stabilire subito se <span class="arithmatex">\(v\)</span> appartiene a <span class="arithmatex">\(W_{2}\)</span>?</p>
+</div>
+<ol>
+<li>
+<p>Poiché <span class="arithmatex">\(v\neq 0\)</span>, <span class="arithmatex">\(\dim W_{1}=1\)</span>. I vettori <span class="arithmatex">\(w_{1},w_{2}\)</span> sono L.I. perché l'unica soluzione di <span class="arithmatex">\(a w_{1}+b w_{2}=0\)</span> è <span class="arithmatex">\(a=b=0\)</span>; quindi <span class="arithmatex">\(\dim W_{2}=2\)</span>.</p>
+</li>
+<li>
+<p>Cerchiamo <span class="arithmatex">\(c,a,b\in\mathbb{R}\)</span> tali che <span class="arithmatex">\(c v = a w_{1}+b w_{2}\)</span>:</p>
+</li>
+</ol>
+<div class="arithmatex">\[
+\begin{cases}
+3a+5b=c,\\
+a+2b=0,\\
+-\,a-3b=c.
+\end{cases}
+\]</div>
+<p>Dalla seconda equazione otteniamo <span class="arithmatex">\(a=-2b\)</span> e sostituendo ricaviamo <span class="arithmatex">\(c=-b\)</span>. Non essendo l'unica soluzione quella banale, <span class="arithmatex">\(W_{1}\cap W_{2}\)</span> ha dimensione <span class="arithmatex">\(1\)</span>. In particolare <span class="arithmatex">\(v=2w_{1}-w_{2}\)</span>, quindi <span class="arithmatex">\(W_{1}\subseteq W_{2}\)</span>.</p>
+<ol>
+<li>Poiché <span class="arithmatex">\(W_{1}\subseteq W_{2}\)</span>, si ha <span class="arithmatex">\(W_{1}+W_{2}=W_{2}\)</span> e <span class="arithmatex">\(\dim(W_{1}+W_{2})=2\)</span>. Equivalentemente, per la <a href="../../../teoria/basi-e-dimensione/teorema-di-grassmann/">formula di Grassmann</a>:</li>
+</ol>
+<div class="arithmatex">\[
+\dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=1+2-1=2.
+\]</div>
+<hr />
+<h2 id="esercizio-3">Esercizio 3<a class="headerlink" href="#esercizio-3" title="Permanent link">&para;</a></h2>
+<p>Siano</p>
+<div class="arithmatex">\[
+W_{1}=\{(x,y,z)\in\mathbb{R}^{3}: x+2y-3z=0\}, \qquad W_{2}=\{(x,y,z)\in\mathbb{R}^{3}: -x+y+2z=0\}.
+\]</div>
+<p>Calcolare <span class="arithmatex">\(\dim(W_{1}+W_{2})\)</span>.</p>
+<p><strong>Soluzione</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Axio ti ricorda</p>
+<p>La <a href="../../../teoria/basi-e-dimensione/teorema-di-grassmann/">formula di Grassmann</a> può semplificare i conti se conosci le dimensioni dei sottospazi e della loro intersezione.</p>
+</div>
+<ol>
+<li>Dall'equazione di <span class="arithmatex">\(W_{1}\)</span> si ricava <span class="arithmatex">\(x=-2y+3z\)</span>, quindi</li>
+</ol>
+<div class="arithmatex">\[
+(x,y,z)=y(-2,1,0)+z(3,0,1)
+\]</div>
+<p>e <span class="arithmatex">\(\dim W_{1}=2\)</span>.</p>
+<ol>
+<li>Dall'equazione di <span class="arithmatex">\(W_{2}\)</span> si ricava <span class="arithmatex">\(y=x-2z\)</span>, quindi</li>
+</ol>
+<div class="arithmatex">\[
+(x,y,z)=x(1,1,0)+z(0,-2,1)
+\]</div>
+<p>e <span class="arithmatex">\(\dim W_{2}=2\)</span>.</p>
+<ol>
+<li>Risolvendo il sistema</li>
+</ol>
+<div class="arithmatex">\[
+\begin{cases}
+x+2y-3z=0,\\
+-x+y+2z=0,
+\end{cases}
+\]</div>
+<p>si ottiene <span class="arithmatex">\(z=3y\)</span> e <span class="arithmatex">\(x=7y\)</span>, per cui</p>
+<div class="arithmatex">\[
+(x,y,z)=y(7,1,3)
+\]</div>
+<p>e <span class="arithmatex">\(\dim(W_{1}\cap W_{2})=1\)</span>.</p>
+<ol>
+<li>Per la formula di Grassmann</li>
+</ol>
+<div class="arithmatex">\[
+\dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=2+2-1=3.
+\]</div>
+<p>Quindi <span class="arithmatex">\(W_{1}+W_{2}=\mathbb{R}^{3}\)</span>.</p>
+<hr />
+<h2 id="esercizio-4">Esercizio 4<a class="headerlink" href="#esercizio-4" title="Permanent link">&para;</a></h2>
+<p>Siano</p>
+<div class="arithmatex">\[
+v_{1}=\begin{pmatrix}1\\0\\1\\-1\end{pmatrix},\quad
+v_{2}=\begin{pmatrix}1\\1\\1\\2\end{pmatrix},\qquad
+u_{1}=\begin{pmatrix}0\\3\\0\\7\end{pmatrix},\quad
+u_{2}=\begin{pmatrix}1\\0\\0\\1\end{pmatrix}.
+\]</div>
+<p>Sia <span class="arithmatex">\(W_{1}=\operatorname{span}(v_{1},v_{2})\)</span> e <span class="arithmatex">\(W_{2}=\operatorname{span}(u_{1},u_{2})\)</span>. Calcolare:</p>
+<ol>
+<li><span class="arithmatex">\(\dim W_{1}\)</span> e <span class="arithmatex">\(\dim W_{2}\)</span>;</li>
+<li><span class="arithmatex">\(W_{1}\cap W_{2}\)</span>;</li>
+<li><span class="arithmatex">\(\dim(W_{1}+W_{2})\)</span>.</li>
+</ol>
+<p><strong>Soluzione</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Axio ti incoraggia</p>
+<p>Controlla l'intersezione prima di applicare la <a href="../../../teoria/basi-e-dimensione/teorema-di-grassmann/">formula di Grassmann</a>!</p>
+</div>
+<ol>
+<li>
+<p>Le coppie <span class="arithmatex">\(\{v_{1},v_{2}\}\)</span> e <span class="arithmatex">\(\{u_{1},u_{2}\}\)</span> sono l.i., quindi <span class="arithmatex">\(\dim W_{1}=\dim W_{2}=2\)</span>.</p>
+</li>
+<li>
+<p>Un vettore comune soddisfa</p>
+</li>
+</ol>
+<div class="arithmatex">\[
+a v_{1}+b v_{2}=c u_{1}+d u_{2}.
+\]</div>
+<p>Il sistema associato è</p>
+<div class="arithmatex">\[
+\begin{cases}
+a+b=d,\\
+b=3c,\\
+a+b=0,\\
+-a+2b=7c+d.
+\end{cases}
+\]</div>
+<p>Risolvendo si ottiene <span class="arithmatex">\(a=b=c=d=0\)</span>, per cui <span class="arithmatex">\(W_{1}\cap W_{2}=\{0\}\)</span>.</p>
+<ol>
+<li>Per la formula di Grassmann</li>
+</ol>
+<div class="arithmatex">\[
+   \dim(W_{1}+W_{2})=\dim W_{1}+\dim W_{2}-\dim(W_{1}\cap W_{2})=2+2-0=4,
+\]</div>
+<p>dunque <span class="arithmatex">\(W_{1}+W_{2}=\mathbb{R}^{4}\)</span>.</p>
+<hr />
+<h2 id="esercizio-5">Esercizio 5<a class="headerlink" href="#esercizio-5" title="Permanent link">&para;</a></h2>
+<p>In <span class="arithmatex">\(P_{3}\)</span> (polinomi reali di grado <span class="arithmatex">\(\le 3\)</span>) siano</p>
+<div class="arithmatex">\[
+W_{1}=\{p\in P_{3}: p(1)=0\},\qquad W_{2}=\{p\in P_{3}: p(2)=0\}.
+\]</div>
+<p>Calcolare <span class="arithmatex">\(W_{1}+W_{2}\)</span> e le dimensioni in gioco.</p>
+<p><strong>Soluzione</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Axio ti provoca</p>
+<p>Prova a risolvere l'esercizio con due strategie diverse: il punto di vista dei funzionali e quello dei coefficienti.</p>
+</div>
+<h3 id="metodo-a-funzionali-lineari">Metodo A — Funzionali lineari<a class="headerlink" href="#metodo-a-funzionali-lineari" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Le valutazioni <span class="arithmatex">\(\operatorname{ev}_{1}(p)=p(1)\)</span> e <span class="arithmatex">\(\operatorname{ev}_{2}(p)=p(2)\)</span> sono applicazioni lineari suriettive; dunque</li>
+</ol>
+<div class="arithmatex">\[
+\dim W_{1}=\dim W_{2}=4-1=3.
+\]</div>
+<ol>
+<li>Consideriamo <span class="arithmatex">\(T:P_{3}\to\mathbb{R}^{2}\)</span> definita da <span class="arithmatex">\(T(p)=(p(1),p(2))\)</span>. Poiché</li>
+</ol>
+<div class="arithmatex">\[
+T(1)=(1,1),\qquad T(x)=(1,2)
+\]</div>
+<p>sono vettori l.i. in <span class="arithmatex">\(\mathbb{R}^{2}\)</span>, <span class="arithmatex">\(\operatorname{rank}T=2\)</span> e quindi</p>
+<div class="arithmatex">\[
+\dim(W_{1}\cap W_{2})=4-2=2.
+\]</div>
+<ol>
+<li>Per la <a href="../../../teoria/basi-e-dimensione/teorema-di-grassmann/">formula di Grassmann</a></li>
+</ol>
+<div class="arithmatex">\[
+\dim(W_{1}+W_{2})=3+3-2=4.
+\]</div>
+<p>Dato che <span class="arithmatex">\(\dim P_{3}=4\)</span>, si ottiene</p>
+<div class="arithmatex">\[
+W_{1}+W_{2}=P_{3}.
+\]</div>
+<p>Una base di <span class="arithmatex">\(W_{1}\cap W_{2}\)</span> è <span class="arithmatex">\(\{(x-1)(x-2),\; x(x-1)(x-2)\}\)</span>.</p>
+<h3 id="metodo-b-coefficienti">Metodo B — Coefficienti<a class="headerlink" href="#metodo-b-coefficienti" title="Permanent link">&para;</a></h3>
+<p>Identifichiamo <span class="arithmatex">\(p(x)=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}\)</span> con <span class="arithmatex">\((a_{0},a_{1},a_{2},a_{3})\in\mathbb{R}^{4}\)</span>.</p>
+<ol>
+<li>Le condizioni <span class="arithmatex">\(p(1)=0\)</span> e <span class="arithmatex">\(p(2)=0\)</span> si traducono in</li>
+</ol>
+<div class="arithmatex">\[
+a_{0}+a_{1}+a_{2}+a_{3}=0,\qquad a_{0}+2a_{1}+4a_{2}+8a_{3}=0,
+\]</div>
+<p>da cui <span class="arithmatex">\(\dim W_{1}=\dim W_{2}=3\)</span>.</p>
+<ol>
+<li>Risolvendo il sistema con entrambe le equazioni otteniamo</li>
+</ol>
+<div class="arithmatex">\[
+(a_{0},a_{1},a_{2},a_{3})=s(2,-3,1,0)+t(6,-7,0,1),
+\]</div>
+<p>e quindi <span class="arithmatex">\(\dim(W_{1}\cap W_{2})=2\)</span>.</p>
+<ol>
+<li>Ancora per Grassmann, <span class="arithmatex">\(\dim(W_{1}+W_{2})=4\)</span>, cioè l'intero <span class="arithmatex">\(P_{3}\)</span>.</li>
+</ol>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Aggiornamenti</p>
+<p><strong>Data:</strong> 2025-08-09
+<strong>Breve descrizione:</strong> Creato il foglio 3 con esercizio sulla dimensione delle matrici a traccia nulla.</p>
+<p><strong>Data:</strong> 2025-08-09
+<strong>Breve descrizione:</strong> Aggiunto esercizio sulla somma di sottospazi.</p>
+<p><strong>Data:</strong> 2025-08-09
+<strong>Breve descrizione:</strong> Aggiunto esercizio sulla dimensione di <span class="arithmatex">\(W_{1}+W_{2}\)</span>.</p>
+<p><strong>Data:</strong> 2025-08-09
+<strong>Breve descrizione:</strong> Aggiunto esercizio sulla somma di due sottospazi in <span class="arithmatex">\(\mathbb{R}^{4}\)</span>.</p>
+<p><strong>Data:</strong> 2025-08-10
+<strong>Breve descrizione:</strong> Aggiunto esercizio sulla somma <span class="arithmatex">\(W_{1}+W_{2}\)</span> in <span class="arithmatex">\(P_{3}\)</span>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.sections", "navigation.indexes", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../../../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+      
+        <script src="../../../../js/download.js"></script>
+      
+        <script src="../../../../assets/paths.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
+      
+        <script src="../../../../js/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

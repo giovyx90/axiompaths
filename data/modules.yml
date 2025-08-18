@@ -1,0 +1,24 @@
+- id: RREF
+  name: Riduzione di Gauss (RREF)
+  theory: ["/hub/matrici#operazioni-elementari"]
+- id: RankRead
+  name: Lettura del rango
+  theory: ["/hub/rango-nullita"]
+- id: RC
+  name: Teorema di Rouché–Capelli
+  theory: ["/hub/rango-nullita#rouche-capelli"]
+- id: BasisExtract
+  name: Estrazione base (da span o da N(A))
+  theory: ["/hub/basi-dimensione"]
+- id: ChangeOfBasis
+  name: Cambio di base
+  theory: ["/hub/basi-dimensione#cambio-di-base"]
+- id: LinCheck
+  name: Test di linearità
+  theory: ["/hub/applicazioni-lineari#linearita"]
+- id: KernelSolve
+  name: Ker(T) come soluzione di Tx=0
+  theory: ["/hub/applicazioni-lineari#ker-im"]
+- id: ImagePivot
+  name: Im(T) da colonne pivot
+  theory: ["/hub/applicazioni-lineari#ker-im"]

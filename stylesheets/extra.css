@@ -1,101 +1,78 @@
-/* -------------------------------------------------
-   AXIOM PATHS — extra.css      v1.0  (plug-and-play)
-   -------------------------------------------------
-   • palette b/n minimale
-   • tipografia leggibile
-   • larghezza contenuto controllata
-   • toc laterale più chiaro
-   • toc corrente evidenziato
-   ------------------------------------------------- */
-
-/* ====== ROOT TOKENS ================================= */
-:root{
-  --ap-width:880px;                 /* max larghezza colonna */
-  --ap-border:#e6e6e6;              /* hair-line gray        */
-  --ap-accent:#000;                 /* unico accento         */
-  --ap-code   :#0d0d0d;             /* bg blocchi <pre>      */
-  --ap-code-fg:#fafafa;             /* fg codice blocco      */
+/* ====== NOTHING-TECH THEME =========================== */
+:root {
+  --nt-black: #000;
+  --nt-green: #0f0;
+  --nt-grid: rgba(0, 255, 0, 0.05);
+  --nt-hover-glow: 0 0 15px #0f0;
 }
 
-/* ====== LAYOUT & TYPO ================================= */
-.md-content__inner{
-  max-width:var(--ap-width);
-  margin-inline:auto;
+body {
+  background-color: var(--nt-black) !important;
+  color: var(--nt-green) !important;
+  font-family: 'DotGothic16', monospace !important;
 }
 
+/* Effetto griglia dot-matrix */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(var(--nt-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nt-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: -1;
+}
+
+/* Titoli con effetto glow */
 .md-typeset h1,
-.md-typeset h2{
-  font-family:"DotGothic16",monospace;
-  letter-spacing:.04em;
-  font-weight:400;
+.md-typeset h2 {
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+  transition: text-shadow 0.3s;
 }
 
-.md-typeset h1{line-height:.9}
-.md-typeset h2{margin-top:3.5rem}
-
-/* ====== NAVBAR & SIDEBAR ============================= */
-.md-header{
-  border-bottom:1px solid var(--ap-border);
-  box-shadow:none;
+.md-typeset h1:hover,
+.md-typeset h2:hover {
+  text-shadow: var(--nt-hover-glow);
 }
 
-.md-sidebar{
-  border-right:1px solid var(--ap-border);
+/* Navigation Tech Style */
+.md-header {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 1px dashed var(--nt-green) !important;
 }
 
-/* TOC in pagina */
-.md-nav--secondary .md-nav{
-  font-size:.85rem;
-}
-.md-nav__link--active,
-.md-nav__link--active:hover{
-  color:var(--ap-accent);
-  font-weight:600;
+.md-tabs {
+  border-bottom: 1px dashed var(--nt-green);
 }
 
-/* ====== LINK E HOVER ================================= */
-.md-typeset a{
-  text-decoration:none;
-  border-bottom:1px solid rgba(0,0,0,.18);
-  color:inherit;
-}
-.md-typeset a:hover{
-  border-bottom-color:var(--ap-accent);
+/* Link stile terminale */
+.md-typeset a {
+  color: var(--nt-green) !important;
+  border-bottom: 1px dotted var(--nt-green) !important;
+  transition: text-shadow 0.3s;
 }
 
-/* ====== BLOCCO CODICE ================================= */
-.md-typeset pre>code{
-  background:var(--ap-code);
-  color:var(--ap-code-fg);
-  border:1px solid var(--ap-border);
-  border-radius:6px;
-  padding:1.1rem 1.4rem;
-}
-.md-typeset code{
-  background:#f7f7f7;
-  padding:.15em .35em;
-  border-radius:4px;
+.md-typeset a:hover {
+  text-shadow: var(--nt-hover-glow);
+  border-bottom-style: solid !important;
 }
 
-/* ====== TABELLE ====================================== */
-.md-typeset table:not([class]){
-  width:100%;
-  border:1px solid var(--ap-border);
-  border-collapse:collapse;
-}
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td{
-  border:1px solid var(--ap-border);
-  padding:.6em .8em;
-}
-.md-typeset table:not([class]) th{
-  background:#fafafa;
-  font-weight:600;
+/* Blocchi codice stile CRT */
+.md-typeset pre>code {
+  background-color: #001a00 !important;
+  border: 1px solid var(--nt-green) !important;
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
 }
 
-/* ====== MEDIA QUERY — MOBILE ========================= */
-@media(max-width:960px){
-  :root{ --ap-width:92vw }
-  .md-sidebar{border-right:none}
+/* Tabelle stile matrix */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--nt-green);
 }
 
+.md-typeset table:not([class]) th {
+  background-color: rgba(0, 255, 0, 0.1);
+}
